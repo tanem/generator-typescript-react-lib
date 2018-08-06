@@ -16,5 +16,3 @@ module.exports = {
   // https://github.com/facebook/jest/commit/b6d575287e820bf6a3d9d164bb990177d63f5996
   testURL: 'http://localhost'
 }
-
-auto gen 

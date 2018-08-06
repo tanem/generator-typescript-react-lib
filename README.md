@@ -37,5 +37,5 @@ MIT
 [codecov-url]: https://codecov.io/gh/tanem/generator-typescript-react-lib
 [npmv-image]: https://img.shields.io/npm/v/generator-typescript-react-lib.svg?style=flat-square
 [npmv-url]: https://www.npmjs.com/package/generator-typescript-react-lib
-[npmd-image]: (https://img.shields.io/npm/dm/generator-typescript-react-lib.svg?style=flat-square)
-[npmd-url]: https://www.npmjs.com/package/generator-typescript-react-lib)
+[npmd-image]: https://img.shields.io/npm/dm/generator-typescript-react-lib.svg?style=flat-square
+[npmd-url]: https://www.npmjs.com/package/generator-typescript-react-lib
