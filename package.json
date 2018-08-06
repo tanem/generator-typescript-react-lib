@@ -1,0 +1,38 @@
+{
+  "name": "generator-typescript-react-lib",
+  "version": "1.0.0",
+  "description": "A Yeoman generator for React libs written with Typescript.",
+  "homepage": "https://github.com/tanem/generator-typescript-react-lib",
+  "bugs": "https://github.com/tanem/generator-typescript-react-lib/issues",
+  "author": "Tane Morgan (https://github.com/tanem)",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "library",
+    "react",
+    "typescript",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "codecov": "^3.0.4",
+    "glob": "^7.1.2",
+    "jest": "^23.4.2",
+    "prettier": "^1.14.0",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.9.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^3.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "github:tanem/generator-typescript-react-lib",
+  "license": "MIT"
+}

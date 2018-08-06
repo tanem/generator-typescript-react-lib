@@ -1,0 +1,628 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates .gitignore 1`] = `
+"*.log
+.DS_Store
+cjs
+coverage
+es
+index.d.ts
+node_modules
+umd"
+`;
+
+exports[`creates .prettierignore 1`] = `
+"cjs
+coverage
+es
+index.d.ts
+package.json
+umd"
+`;
+
+exports[`creates .prettierrc.json 1`] = `
+Object {
+  "semi": false,
+  "singleQuote": true,
+}
+`;
+
+exports[`creates .travis.yml 1`] = `
+"language: node_js
+notifications:
+  email: false
+script:
+  - npm t
+  - $(npm bin)/codecov
+"
+`;
+
+exports[`creates LICENSE 1`] = `
+"The MIT License (MIT)
+
+Copyright (c) 2018-present John Smith <john.smith@js.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"
+`;
+
+exports[`creates README.md 1`] = `
+"# test-package
+
+[![build status](https://img.shields.io/travis/jsmith/test-package/master.svg?style=flat-square)](https://travis-ci.org/jsmith/test-package)
+[![coverage status](https://img.shields.io/codecov/c/github/jsmith/test-package.svg?style=flat-square)](https://codecov.io/gh/jsmith/test-package)
+[![npm version](https://img.shields.io/npm/v/test-package.svg?style=flat-square)](https://www.npmjs.com/package/test-package)
+[![npm downloads](https://img.shields.io/npm/dm/test-package.svg?style=flat-square)](https://www.npmjs.com/package/test-package)
+[![gzip size](https://img.badgesize.io/https://unpkg.com/test-package/umd/test-package.production.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/test-package/umd/)
+
+> Test package.
+
+## Basic Usage
+
+\`\`\`jsx
+import React from 'react'
+import { render } from 'react-dom'
+
+render(, document.getElementById('root'))
+\`\`\`
+
+## Live Examples
+
+- [Basic Usage](https://codesandbox.io/)
+- [API Example](https://codesandbox.io/)
+- [UMD Build (Development)](https://codesandbox.io/)
+- [UMD Build (Production)](https://codesandbox.io/)
+
+## API
+
+**Props**
+
+- \`foo\` - Something something.
+- \`bar\` - _Optional_ Something something. Defaults to \`null\`.
+
+**Example**
+
+\`\`\`jsx
+\`\`\`
+
+## Installation
+
+\`\`\`
+$ npm install test-package --save
+\`\`\`
+
+There are also UMD builds available via [unpkg](https://unpkg.com/):
+
+- https://unpkg.com/test-package/umd/test-package.development.js
+- https://unpkg.com/test-package/umd/test-package.production.min.js
+
+For the non-minified development version, make sure you have already included:
+
+- [\`React\`](https://unpkg.com/react/umd/react.development.js)
+- [\`ReactDOM\`](https://unpkg.com/react-dom/umd/react-dom.development.js)
+- [\`PropTypes\`](https://unpkg.com/prop-types/prop-types.js)
+
+For the minified production version, make sure you have already included:
+
+- [\`React\`](https://unpkg.com/react/umd/react.production.min.js)
+- [\`ReactDOM\`](https://unpkg.com/react-dom/umd/react-dom.production.min.js)
+
+## License
+
+MIT
+"
+`;
+
+exports[`creates index.js 1`] = `
+"'use strict'
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./cjs/test-package.production.min.js')
+} else {
+  module.exports = require('./cjs/test-package.development.js')
+}
+"
+`;
+
+exports[`creates package.json 1`] = `
+Object {
+  "author": "John Smith <john.smith@js.com>",
+  "bugs": Object {
+    "url": "github:jsmith/test-package/issues",
+  },
+  "dependencies": Object {
+    "@babel/runtime": "^7.0.0-beta.56",
+    "prop-types": "^15.6.2",
+  },
+  "description": "Test package.",
+  "devDependencies": Object {
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.56",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.0.0-beta.56",
+    "@babel/preset-react": "^7.0.0-beta.56",
+    "@babel/preset-typescript": "^7.0.0-beta.56",
+    "@types/enzyme": "^3.1.13",
+    "@types/jest": "^23.3.1",
+    "@types/prop-types": "^15.5.4",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.14",
+    "codecov": "^3.0.4",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.2",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-test-renderer": "^16.4.2",
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.63.5",
+    "rollup-plugin-babel": "^4.0.0-beta.7",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-uglify": "^4.0.0",
+    "ts-jest": "^23.1.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.1",
+  },
+  "files": Array [
+    "cjs",
+    "es",
+    "index.d.ts",
+    "umd",
+  ],
+  "homepage": "github:jsmith/test-package",
+  "jsnext:main": "es/test-package.js",
+  "keywords": Array [
+    "javascript",
+    "typescript",
+    "react",
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "es/test-package.js",
+  "name": "test-package",
+  "peerDependencies": Object {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+  },
+  "repository": Object {
+    "type": "git",
+    "url": "github:jsmith/test-package",
+  },
+  "scripts": Object {
+    "authors": "scripts/authors",
+    "build": "run-s clean compile bundle",
+    "bundle": "rollup -c",
+    "check:format": "prettier --list-different \\"**/*.{js,ts,tsx}\\"",
+    "check:types": "tsc --noEmit",
+    "clean": "run-p clean:*",
+    "clean:cjs": "rimraf cjs",
+    "clean:coverage": "rimraf coverage",
+    "clean:es": "rimraf es",
+    "clean:typings": "rimraf index.d.ts",
+    "clean:umd": "rimraf umd",
+    "compile": "tsc --emitDeclarationOnly",
+    "format": "prettier --write \\"**/*.{js,ts,tsx}\\"",
+    "lint": "tslint -t stylish -p .",
+    "postversion": "git push && git push --tags && npm publish",
+    "release": "npm version -m 'Release v%s'",
+    "test": "run-s check:* lint build test:*",
+    "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
+    "test:cjsprod": "cross-env NODE_ENV=production jest --config ./scripts/jest/config.cjs.js",
+    "test:es": "jest --config ./scripts/jest/config.es.js",
+    "test:src": "jest --config ./scripts/jest/config.src.js",
+    "test:umd": "jest --config ./scripts/jest/config.umd.js",
+    "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
+    "version": "run-s test authors && git add .",
+  },
+  "typings": "index.d.ts",
+  "version": "1.0.0",
+}
+`;
+
+exports[`creates rollup.config.js 1`] = `
+"import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
+import filesize from 'rollup-plugin-filesize'
+import nodeResolve from 'rollup-plugin-node-resolve'
+import replace from 'rollup-plugin-replace'
+import sourcemaps from 'rollup-plugin-sourcemaps'
+import { uglify } from 'rollup-plugin-uglify'
+import pkg from './package.json'
+
+const CJS_DEV = 'CJS_DEV'
+const CJS_PROD = 'CJS_PROD'
+const ES = 'ES'
+const UMD_DEV = 'UMD_DEV'
+const UMD_PROD = 'UMD_PROD'
+
+const input = './src/index.tsx'
+
+const getGlobals = bundleType => {
+  const baseGlobals = {
+    'react-dom': 'ReactDOM',
+    react: 'React'
+  }
+
+  switch (bundleType) {
+    case UMD_DEV:
+      return { ...baseGlobals, 'prop-types': 'PropTypes' }
+    case UMD_PROD:
+      return baseGlobals
+    default:
+      return {}
+  }
+}
+
+const getExternal = bundleType => {
+  const peerDependencies = Object.keys(pkg.peerDependencies)
+  const dependencies = Object.keys(pkg.dependencies)
+
+  // Hat-tip: https://github.com/rollup/rollup-plugin-babel/issues/148#issuecomment-399696316.
+  const makeExternalPredicate = externals => {
+    if (externals.length === 0) {
+      return () => false
+    }
+    const pattern = new RegExp(\`^(\${externals.join('|')})($|/)\`)
+    return id => pattern.test(id)
+  }
+
+  switch (bundleType) {
+    case CJS_DEV:
+    case CJS_PROD:
+    case ES:
+      return makeExternalPredicate([...peerDependencies, ...dependencies])
+    case UMD_DEV:
+      return makeExternalPredicate([...peerDependencies, 'prop-types'])
+    default:
+      return makeExternalPredicate(peerDependencies)
+  }
+}
+
+const isProduction = bundleType =>
+  bundleType === CJS_PROD || bundleType === UMD_PROD
+
+const getBabelConfig = bundleType => {
+  const options = {
+    babelrc: false,
+    exclude: 'node_modules/**',
+    presets: [
+      ['@babel/env', { loose: true, modules: false }],
+      '@babel/react',
+      '@babel/typescript'
+    ],
+    plugins: [
+      ['@babel/proposal-class-properties', { loose: true }],
+      '@babel/transform-runtime'
+    ],
+    runtimeHelpers: true
+  }
+
+  switch (bundleType) {
+    case ES:
+      return {
+        ...options,
+        plugins: [
+          ...options.plugins,
+          ['transform-react-remove-prop-types', { mode: 'wrap' }]
+        ]
+      }
+    case UMD_PROD:
+    case CJS_PROD:
+      return {
+        ...options,
+        plugins: [
+          ...options.plugins,
+          ['transform-react-remove-prop-types', { removeImport: true }]
+        ]
+      }
+    default:
+      return options
+  }
+}
+
+const getPlugins = bundleType => [
+  nodeResolve(),
+  commonjs({
+    include: 'node_modules/**',
+    namedExports: {
+      'node_modules/prop-types/index.js': [
+        'any',
+        'array',
+        'arrayOf',
+        'bool',
+        'element',
+        'exact',
+        'func',
+        'instanceOf',
+        'node',
+        'number',
+        'object',
+        'objectOf',
+        'oneOf',
+        'oneOfType',
+        'shape',
+        'string',
+        'symbol'
+      ]
+    }
+  }),
+  babel(getBabelConfig(bundleType)),
+  bundleType !== ES &&
+    replace({
+      'process.env.NODE_ENV': JSON.stringify(
+        isProduction(bundleType) ? 'production' : 'development'
+      )
+    }),
+  sourcemaps(),
+  ...(isProduction(bundleType) ? [uglify(), filesize()] : [])
+]
+
+const getCjsConfig = bundleType => ({
+  input,
+  external: getExternal(bundleType),
+  output: {
+    file: \`cjs/test-package.\${
+      isProduction(bundleType) ? 'production.min' : 'development'
+    }.js\`,
+    format: 'cjs',
+    sourcemap: true
+  },
+  plugins: getPlugins(bundleType)
+})
+
+const getEsConfig = () => ({
+  input,
+  external: getExternal(ES),
+  output: {
+    file: pkg.module,
+    format: 'es',
+    sourcemap: true
+  },
+  plugins: getPlugins(ES)
+})
+
+const getUmdConfig = bundleType => ({
+  input,
+  external: getExternal(bundleType),
+  output: {
+    file: \`umd/test-package.\${
+      isProduction(bundleType) ? 'production.min' : 'development'
+    }.js\`,
+    format: 'umd',
+    globals: getGlobals(bundleType),
+    name: 'TestPkg',
+    sourcemap: true
+  },
+  plugins: getPlugins(bundleType)
+})
+
+// TODO: Rename to \\"config\\"
+export default [
+  getCjsConfig(CJS_DEV),
+  getCjsConfig(CJS_PROD),
+  getEsConfig(),
+  getUmdConfig(UMD_DEV),
+  getUmdConfig(UMD_PROD)
+]
+"
+`;
+
+exports[`creates scripts/authors 1`] = `
+"#!/usr/bin/env sh
+
+git shortlog -se \\\\
+  | perl -spe 's/^\\\\s+\\\\d+\\\\s+//' \\\\
+  > AUTHORS"
+`;
+
+exports[`creates scripts/jest/config.cjs.js 1`] = `
+"const srcConfig = require('./config.src')
+
+module.exports = Object.assign({}, srcConfig, {
+  collectCoverage: false,
+  moduleNameMapper: {
+    '^../src$': \`<rootDir>/index.js\`
+  }
+})
+"
+`;
+
+exports[`creates scripts/jest/config.es.js 1`] = `
+"const srcConfig = require('./config.src')
+
+module.exports = Object.assign({}, srcConfig, {
+  collectCoverage: false,
+  moduleNameMapper: {
+    '^../src$': \`<rootDir>/es/test-package.js\`
+  }
+})
+"
+`;
+
+exports[`creates scripts/jest/config.src.js 1`] = `
+"module.exports = {
+  collectCoverage: true,
+  collectCoverageFrom: ['src/index.tsx'],
+  globals: {
+    'ts-jest': { tsConfigFile: require.resolve('../../tsconfig.test.json') }
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  rootDir: process.cwd(),
+  roots: ['<rootDir>/test'],
+  setupFiles: ['raf/polyfill', require.resolve('./setupEnvironment')],
+  testMatch: ['<rootDir>/test/*.spec.ts?(x)'],
+  transform: { '^.+\\\\\\\\.(js|tsx?)$': 'ts-jest' },
+
+  // The following can be removed when a new Jest version is published that
+  // contains the following fix:
+  // https://github.com/facebook/jest/commit/b6d575287e820bf6a3d9d164bb990177d63f5996
+  testURL: 'http://localhost'
+}
+
+auto gen "
+`;
+
+exports[`creates scripts/jest/config.umd.js 1`] = `
+"const srcConfig = require('./config.src')
+
+module.exports = Object.assign({}, srcConfig, {
+  collectCoverage: false,
+  moduleNameMapper: {
+    '^../src$': \`<rootDir>/umd/test-package.development.js\`
+  }
+})
+"
+`;
+
+exports[`creates scripts/jest/config.umdprod.js 1`] = `
+"const srcConfig = require('./config.src')
+
+module.exports = Object.assign({}, srcConfig, {
+  collectCoverage: false,
+  moduleNameMapper: {
+    '^../src$': \`<rootDir>/umd/test-package.production.min.js\`
+  }
+})
+"
+`;
+
+exports[`creates scripts/jest/setupEnvironment.js 1`] = `
+"const Adapter = require('enzyme-adapter-react-16')
+const { configure } = require('enzyme')
+
+configure({ adapter: new Adapter() })
+"
+`;
+
+exports[`creates src/index.tsx 1`] = `
+"import * as PropTypes from 'prop-types'
+import * as React from 'react'
+
+interface Props {
+  text: string
+}
+
+const C: React.SFC<Props> = ({ text }) => <p>{text}</p>
+
+C.propTypes = {
+  text: PropTypes.string.isRequired
+}
+
+export default C
+"
+`;
+
+exports[`creates test/index.spec.tsx 1`] = `
+"import { mount, ReactWrapper } from 'enzyme'
+import * as React from 'react'
+import C from '../src'
+
+describe('Component', () => {
+  let container: HTMLDivElement
+  let wrapper: ReactWrapper<{}, {}, C>
+
+  beforeEach(() => {
+    container = document.body.appendChild(document.createElement('div'))
+  })
+
+  afterEach(() => {
+    document.body.removeChild(container)
+  })
+
+  it('should render correctly', () => {
+    wrapper = mount(<C text=\\"text\\" />, { attachTo: container })
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+})
+"
+`;
+
+exports[`creates tsconfig.json 1`] = `
+Object {
+  "compilerOptions": Object {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": ".",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "esnext",
+  },
+  "exclude": Array [
+    "node_modules",
+    "dist",
+  ],
+  "include": Array [
+    "src",
+  ],
+}
+`;
+
+exports[`creates tsconfig.test.json 1`] = `
+Object {
+  "compilerOptions": Object {
+    "allowJs": true,
+    "module": "commonjs",
+  },
+  "extends": "./tsconfig.json",
+  "include": Array [
+    "src",
+    "test",
+  ],
+}
+`;
+
+exports[`creates tslint.json 1`] = `
+Object {
+  "defaultSeverity": "error",
+  "extends": Array [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier",
+  ],
+  "rules": Object {
+    "interface-name": Array [
+      true,
+      "never-prefix",
+    ],
+    "member-access": Array [
+      true,
+      "no-public",
+    ],
+  },
+}
+`;
