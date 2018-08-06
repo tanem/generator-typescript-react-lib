@@ -17,14 +17,27 @@ const readFile = file => {
   return path.extname(file) === '.json' ? JSON.parse(data) : data
 }
 
-beforeAll(() =>
-  helpers.run(path.join(__dirname, '../generators/app')).withPrompts({
-    author: 'John Smith <john.smith@js.com>',
-    packageDescription: 'Test package.',
-    packageName: 'test-package',
-    umdGlobalName: 'TestPkg',
-    username: 'jsmith'
-  }))
+const usernameMock = jest.fn().mockResolvedValue('mockusername')
+const nameMock = jest.fn().mockResolvedValue('Mock Name')
+const emailMock = jest.fn().mockResolvedValue('mock.user@mock.com')
+
+beforeAll(done => {
+  helpers
+    .run(path.join(__dirname, '../generators/app'))
+    .withPrompts({
+      author: 'John Smith <john.smith@js.com>',
+      packageDescription: 'Test package.',
+      packageName: 'test-package',
+      umdGlobalName: 'TestPkg',
+      username: 'jsmith'
+    })
+    .on('ready', generator => {
+      generator.user.github.username = usernameMock
+      generator.user.git.name = nameMock
+      generator.user.git.email = emailMock
+    })
+    .on('end', done)
+})
 
 test.each(getFiles())('creates %s', file => {
   expect(readFile(file)).toMatchSnapshot()
