@@ -486,8 +486,7 @@ exports[`creates scripts/jest/config.src.js 1`] = `
   // https://github.com/facebook/jest/commit/b6d575287e820bf6a3d9d164bb990177d63f5996
   testURL: 'http://localhost'
 }
-
-auto gen "
+"
 `;
 
 exports[`creates scripts/jest/config.umd.js 1`] = `
