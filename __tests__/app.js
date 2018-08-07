@@ -4,13 +4,16 @@ const fs = require('fs')
 const glob = require('glob')
 const helpers = require('yeoman-test')
 const path = require('path')
+const templateMap = require('../generators/app/template-map')
 
 const getFiles = () =>
-  glob.sync('**', {
-    cwd: path.join(process.cwd(), 'generators/app/templates'),
-    dot: true,
-    nodir: true
-  })
+  glob
+    .sync('**', {
+      cwd: path.join(process.cwd(), 'generators/app/templates'),
+      dot: true,
+      nodir: true
+    })
+    .map(file => (templateMap.has(file) ? templateMap.get(file) : file))
 
 const readFile = file => {
   const data = fs.readFileSync(file, 'utf-8')
