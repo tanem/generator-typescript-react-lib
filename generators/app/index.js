@@ -1,7 +1,7 @@
-'use strict'
-
 const Generator = require('yeoman-generator')
+const glob = require('glob')
 const path = require('path')
+const templateMap = require('./template-map')
 
 module.exports = class extends Generator {
   async prompting() {
@@ -52,13 +52,21 @@ module.exports = class extends Generator {
       this.props.packageName
     }`
 
-    this.fs.copyTpl(
-      this.templatePath('**/*'),
-      this.destinationPath(),
-      this.props,
-      {},
-      { globOptions: { dot: true } }
-    )
+    glob
+      .sync('**', {
+        cwd: this.sourceRoot(),
+        dot: true,
+        nodir: true
+      })
+      .forEach(template => {
+        this.fs.copyTpl(
+          this.templatePath(template),
+          this.destinationPath(
+            templateMap.has(template) ? templateMap.get(template) : template
+          ),
+          this.props
+        )
+      })
   }
 
   install() {
