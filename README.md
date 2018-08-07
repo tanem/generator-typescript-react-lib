@@ -7,17 +7,30 @@
 
 > A [Yeoman](http://yeoman.io) generator for [React](https://reactjs.org) libs written with [Typescript](https://www.typescriptlang.org).
 
+## Intent
+
+To provide a basic starting point when authoring React libraries with Typescript, rather than trying to accomodate every possible use-case.
+
 ## Features
 
-_TODO_
+- Generates CommonJS, ES module, and Universal Module Definition bundles via [Rollup](https://rollupjs.org)
+- Tests bundles via [Jest](https://jestjs.io/)
+- Generates Typescript type declarations
+- Outputs, strips, or wraps [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) declarations according to bundle type
+- Configures continuous integration via [Travis](https://travis-ci.org/)
+- Configures code coverage analysis via [Codecov](https://codecov.io/)
+- Adds scripts for releasing to [npm](https://www.npmjs.com/)
+
+## Examples
+
+- [react-svg](tanem/react-svg)
 
 ## Installation
 
 First, install Yeoman and generator-typescript-react-lib:
 
 ```
-$ npm install -g yo
-$ npm install -g generator-typescript-react-lib
+$ npm install -g yo generator-typescript-react-lib
 ```
 
 Then generate your new project:
