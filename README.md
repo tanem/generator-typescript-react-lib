@@ -16,8 +16,7 @@ _TODO_
 First, install Yeoman and generator-typescript-react-lib:
 
 ```
-$ npm install -g yo
-$ npm install -g generator-typescript-react-lib
+$ npm install -g yo generator-typescript-react-lib
 ```
 
 Then generate your new project:
