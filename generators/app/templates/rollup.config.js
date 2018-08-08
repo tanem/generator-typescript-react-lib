@@ -174,7 +174,6 @@ const getUmdConfig = bundleType => ({
   plugins: getPlugins(bundleType)
 })
 
-// TODO: Rename to "config"
 export default [
   getCjsConfig(CJS_DEV),
   getCjsConfig(CJS_PROD),
