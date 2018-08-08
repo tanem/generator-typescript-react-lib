@@ -17,7 +17,7 @@
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
     "check:format": "prettier --list-different \"**/*.{js,ts,tsx}\"",
-    "check:types": "tsc --noEmit",
+    "check:types": "tsc --noEmit && tsc -p tsconfig.test.json --noEmit",
     "clean": "run-p clean:*",
     "clean:cjs": "rimraf cjs",
     "clean:coverage": "rimraf coverage",
