@@ -229,7 +229,7 @@ Object {
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
     "check:format": "prettier --list-different \\"**/*.{js,ts,tsx}\\"",
-    "check:types": "tsc --noEmit",
+    "check:types": "tsc --noEmit && tsc -p tsconfig.test.json --noEmit",
     "clean": "run-p clean:*",
     "clean:cjs": "rimraf cjs",
     "clean:coverage": "rimraf coverage",
@@ -251,7 +251,7 @@ Object {
     "version": "run-s test authors && git add .",
   },
   "typings": "index.d.ts",
-  "version": "1.0.0",
+  "version": "0.0.1",
 }
 `;
 
@@ -432,7 +432,6 @@ const getUmdConfig = bundleType => ({
   plugins: getPlugins(bundleType)
 })
 
-// TODO: Rename to \\"config\\"
 export default [
   getCjsConfig(CJS_DEV),
   getCjsConfig(CJS_PROD),
@@ -554,7 +553,7 @@ import C from '../src'
 
 describe('Component', () => {
   let container: HTMLDivElement
-  let wrapper: ReactWrapper<{}, {}, C>
+  let wrapper: ReactWrapper
 
   beforeEach(() => {
     container = document.body.appendChild(document.createElement('div'))
@@ -602,7 +601,6 @@ Object {
 exports[`creates tsconfig.test.json 1`] = `
 Object {
   "compilerOptions": Object {
-    "allowJs": true,
     "module": "commonjs",
   },
   "extends": "./tsconfig.json",
