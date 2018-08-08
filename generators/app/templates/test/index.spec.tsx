@@ -4,7 +4,7 @@ import C from '../src'
 
 describe('Component', () => {
   let container: HTMLDivElement
-  let wrapper: ReactWrapper<{}, {}, C>
+  let wrapper: ReactWrapper
 
   beforeEach(() => {
     container = document.body.appendChild(document.createElement('div'))

@@ -1,6 +1,6 @@
 {
   "name": "<%= packageName %>",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "<%= packageDescription %>",
   "main": "index.js",
   "module": "es/<%= packageName %>.js",
@@ -17,7 +17,7 @@
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
     "check:format": "prettier --list-different \"**/*.{js,ts,tsx}\"",
-    "check:types": "tsc --noEmit",
+    "check:types": "tsc --noEmit && tsc -p tsconfig.test.json --noEmit",
     "clean": "run-p clean:*",
     "clean:cjs": "rimraf cjs",
     "clean:coverage": "rimraf coverage",
