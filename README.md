@@ -9,17 +9,19 @@
 
 ## Intent
 
-To provide a basic starting point when authoring React libraries with Typescript, rather than trying to accomodate every possible use-case.
+To provide a basic starting point when authoring React libraries with Typescript. By design not all use-cases will be handled, so some post-generation modifications may be required.
 
 ## Features
 
 - Generates CommonJS, ES module, and Universal Module Definition bundles via [Rollup](https://rollupjs.org)
 - Tests bundles via [Jest](https://jestjs.io/)
-- Generates Typescript type declarations
+- Generates Typescript type declarations for publishing
 - Outputs, strips, or wraps [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) declarations according to bundle type
 - Configures continuous integration via [Travis](https://travis-ci.org/)
 - Configures code coverage analysis via [Codecov](https://codecov.io/)
 - Adds scripts for releasing to [npm](https://www.npmjs.com/)
+- Makes Universal Module Definition bundles available via [unpkg](Universal Module Definition bundles)
+- Initialises [Git](https://git-scm.com/)
 
 ## Examples
 
