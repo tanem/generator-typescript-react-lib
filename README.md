@@ -25,7 +25,7 @@ To provide a basic starting point when authoring React libraries with Typescript
 
 ## Examples
 
-- [react-svg](tanem/react-svg)
+- [react-svg](https://github.com/tanem/react-svg)
 
 ## Installation
 
