@@ -33,12 +33,13 @@
   },
   "scripts": {
     "authors": "scripts/authors",
+    "changelog": "github_changelog_generator --no-issues --header-label \"# Changelog\" --future-release v$npm_package_version",
     "check": "prettier --list-different \"**/*.{js,ts,tsx}\"",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "postversion": "git push && git push --tags && npm publish",
     "release": "npm version -m 'Release v%s'",
     "test": "jest",
-    "version": "run-s check test authors && git add ."
+    "version": "run-s check test changelog authors && git add ."
   },
   "repository": "github:tanem/generator-typescript-react-lib",
   "license": "MIT"
