@@ -137,6 +137,85 @@ MIT
 "
 `;
 
+exports[`creates examples/basic-usage/.env 1`] = `"REACT_APP_DESCRIPTION=$npm_package_description"`;
+
+exports[`creates examples/basic-usage/.gitignore 1`] = `
+"/node_modules
+"
+`;
+
+exports[`creates examples/basic-usage/README.md 1`] = `
+"# TestPkg Basic Usage Example
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### \`npm start\`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+"
+`;
+
+exports[`creates examples/basic-usage/package.json 1`] = `
+Object {
+  "dependencies": Object {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5",
+    "test-package": "latest",
+  },
+  "description": "TestPkg Basic Usage Example",
+  "keywords": Array [
+    "test-package",
+  ],
+  "name": "basic-usage",
+  "private": true,
+  "scripts": Object {
+    "start": "react-scripts start",
+  },
+  "version": "0.1.0",
+}
+`;
+
+exports[`creates examples/basic-usage/public/index.html 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+
+<head>
+  <meta charset=\\"utf-8\\">
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1, shrink-to-fit=no\\">
+  <title>%REACT_APP_DESCRIPTION%</title>
+</head>
+
+<body>
+  <div id=\\"root\\"></div>
+</body>
+
+</html>"
+`;
+
+exports[`creates examples/basic-usage/public/svg.svg 1`] = `
+"<svg width=\\"40\\" height=\\"40\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+  <rect x=\\"5\\" y=\\"5\\" width=\\"30\\" height=\\"30\\" stroke=\\"black\\" fill=\\"transparent\\" stroke-width=\\"5\\" />
+</svg>"
+`;
+
+exports[`creates examples/basic-usage/src/index.js 1`] = `
+"import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactSVG from 'react-svg'
+
+ReactDOM.render(<ReactSVG src=\\"svg.svg\\" />, document.getElementById('root'))
+"
+`;
+
 exports[`creates index.js 1`] = `
 "'use strict'
 
