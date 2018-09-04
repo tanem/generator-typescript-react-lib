@@ -1,8 +1,8 @@
 # generator-typescript-react-lib
 
+[![npm version][npmv-image]][npmv-url]
 [![build status][travis-image]][travis-url]
 [![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
 [![npm downloads][npmd-image]][npmd-url]
 
 > A [Yeoman](http://yeoman.io) generator for [React](https://reactjs.org) libs written with [Typescript](https://www.typescriptlang.org).
