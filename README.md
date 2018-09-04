@@ -7,7 +7,7 @@
 
 > A [Yeoman](http://yeoman.io) generator for [React](https://reactjs.org) libs written with [Typescript](https://www.typescriptlang.org).
 
-## Intent
+## Background
 
 To provide a basic starting point when authoring React libraries with Typescript. By design not all use-cases will be handled, so some post-generation modifications may be required.
 
