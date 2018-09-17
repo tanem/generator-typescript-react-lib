@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.0.8](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.8) (2018-09-10)
+## [v1.0.9](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.9) (2018-09-18)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.8...v1.0.9)
+
+**Merged pull requests:**
+
+- Add update deps script [\#15](https://github.com/tanem/generator-typescript-react-lib/pull/15) ([tanem](https://github.com/tanem))
+
+## [v1.0.8](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.8) (2018-09-09)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.7...v1.0.8)
 
 **Merged pull requests:**
