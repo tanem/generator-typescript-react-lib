@@ -216,6 +216,15 @@ ReactDOM.render(<ReactSVG src=\\"svg.svg\\" />, document.getElementById('root'))
 "
 `;
 
+exports[`creates ib4b_config_notes.txt 1`] = `
+"sep. artifact / repo
+package to monorepo
+deploys to artifactory
+create bundle
+d=dev, puppet decides what env we're in
+use JSON file, just grab that in app start (divorce from CRA .env)"
+`;
+
 exports[`creates index.js 1`] = `
 "'use strict'
 
@@ -329,6 +338,7 @@ Object {
     "test:src": "jest --config ./scripts/jest/config.src.js",
     "test:umd": "jest --config ./scripts/jest/config.umd.js",
     "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
+    "updatedeps": "node scripts/update-deps",
     "version": "run-s test changelog authors && git add .",
   },
   "typings": "index.d.ts",
@@ -600,6 +610,28 @@ exports[`creates scripts/jest/setupEnvironment.js 1`] = `
 const { configure } = require('enzyme')
 
 configure({ adapter: new Adapter() })
+"
+`;
+
+exports[`creates scripts/update-deps.js 1`] = `
+"const glob = require('glob')
+const shell = require('shelljs')
+
+glob
+  .sync('examples/*/package.json')
+  .concat('package.json')
+  .forEach(packageFile => {
+    shell.exec(\`ncu -a --packageFile \${packageFile}\`)
+  })
+
+if (
+  shell
+    .exec('git ls-files --exclude-standard --modified --others')
+    .split('\\\\n')
+    .some(f => f === 'package.json')
+) {
+  shell.exec('npm i')
+}
 "
 `;
 
