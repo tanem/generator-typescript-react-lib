@@ -101,7 +101,9 @@ const getBabelConfig = bundleType => {
 }
 
 const getPlugins = bundleType => [
-  nodeResolve(),
+  nodeResolve({
+    extensions: ['.js', '.ts', '.tsx']
+  }),
   commonjs({
     include: 'node_modules/**',
     namedExports: {
