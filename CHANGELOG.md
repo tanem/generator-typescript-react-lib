@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.11](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.11) (2018-10-15)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.10...v1.0.11)
+
+**Merged pull requests:**
+
+- Fix rollup conf \(\#18\) [\#19](https://github.com/tanem/generator-typescript-react-lib/pull/19) ([tanem](https://github.com/tanem))
+
 ## [v1.0.10](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.10) (2018-10-04)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.9...v1.0.10)
 
