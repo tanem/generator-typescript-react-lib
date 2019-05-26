@@ -8,7 +8,8 @@
     },
     {
       "depTypeList": ["devDependencies"],
-      "groupName": "dev dependencies"
+      "groupName": "dev dependencies",
+      "rangeStrategy": "pin"
     }
   ]
 }
