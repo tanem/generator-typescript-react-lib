@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base", ":disableRateLimiting"],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "groupName": "dev dependencies"
+    }
+  ]
+}
