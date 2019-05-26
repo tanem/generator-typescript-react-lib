@@ -1,18 +1,12 @@
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/index.tsx'],
-  globals: {
-    'ts-jest': { tsConfigFile: require.resolve('../../tsconfig.test.json') }
-  },
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  collectCoverageFrom: ['src/*.{ts,tsx}'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
+  preset: 'ts-jest',
   rootDir: process.cwd(),
   roots: ['<rootDir>/test'],
-  setupFiles: ['raf/polyfill', require.resolve('./setupEnvironment')],
+  setupFiles: ['<rootDir>/scripts/jest/setupEnvironment.ts'],
+  setupFilesAfterEnv: ['<rootDir>/scripts/jest/setupJest.ts'],
   testMatch: ['<rootDir>/test/*.spec.ts?(x)'],
-  transform: { '^.+\\.(js|tsx?)$': 'ts-jest' },
-
-  // The following can be removed when a new Jest version is published that
-  // contains the following fix:
-  // https://github.com/facebook/jest/commit/b6d575287e820bf6a3d9d164bb990177d63f5996
-  testURL: 'http://localhost'
+  transform: { '^.+\\.(js|tsx?)$': 'ts-jest' }
 }
