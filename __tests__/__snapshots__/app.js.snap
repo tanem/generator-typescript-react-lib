@@ -12,14 +12,35 @@ exports[`creates .eslintrc.js 1`] = `
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   },
   extends: [
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'prettier/@typescript-eslint'
   ],
-  plugins: ['@typescript-eslint']
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off'
+  },
+  overrides: [
+    {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off'
+      }
+    }
+  ]
 }
 "
 `;
@@ -27,6 +48,7 @@ exports[`creates .eslintrc.js 1`] = `
 exports[`creates .gitignore 1`] = `
 "*.log
 .DS_Store
+compiled/
 coverage/
 dist/
 node_modules/"
@@ -35,7 +57,8 @@ node_modules/"
 exports[`creates .nvmrc 1`] = `"lts/*"`;
 
 exports[`creates .prettierignore 1`] = `
-"coverage/
+"compiled/
+coverage/
 dist/"
 `;
 
@@ -269,6 +292,7 @@ Object {
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@types/enzyme": "^3.1.14",
+    "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest": "^23.3.3",
     "@types/prop-types": "^15.5.6",
     "@types/react": "^16.4.14",
@@ -285,6 +309,7 @@ Object {
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-react": "7.13.0",
     "jest": "^23.6.0",
     "jest-prettyhtml-matchers": "1.0.15",
     "npm-run-all": "^4.1.3",
@@ -307,21 +332,18 @@ Object {
     "typescript": "^3.1.1",
   },
   "files": Array [
-    "cjs",
-    "es",
-    "index.d.ts",
-    "umd",
+    "dist",
   ],
   "homepage": "github:jsmith/test-package",
-  "jsnext:main": "es/test-package.js",
+  "jsnext:main": "dist/test-package.esm.js",
   "keywords": Array [
     "javascript",
     "typescript",
     "react",
   ],
   "license": "MIT",
-  "main": "index.js",
-  "module": "es/test-package.js",
+  "main": "dist/index.js",
+  "module": "dist/test-package.esm.js",
   "name": "test-package",
   "peerDependencies": Object {
     "react": "^16.0.0",
@@ -357,8 +379,33 @@ Object {
     "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
     "version": "run-s test changelog authors && git add .",
   },
-  "typings": "index.d.ts",
+  "typings": "dist/index.d.ts",
   "version": "0.0.1",
+}
+`;
+
+exports[`creates renovate.json 1`] = `
+Object {
+  "extends": Array [
+    "config:base",
+    ":disableRateLimiting",
+  ],
+  "packageRules": Array [
+    Object {
+      "depTypeList": Array [
+        "peerDependencies",
+      ],
+      "rangeStrategy": "widen",
+    },
+    Object {
+      "depTypeList": Array [
+        "devDependencies",
+      ],
+      "groupName": "dev dependencies",
+      "rangeStrategy": "pin",
+    },
+  ],
+  "rangeStrategy": "bump",
 }
 `;
 
@@ -684,16 +731,20 @@ describe('Component', () => {
 exports[`creates tsconfig.base.json 1`] = `
 Object {
   "compilerOptions": Object {
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "dist",
     "esModuleInterop": true,
-    "module": "commonjs",
+    "importHelpers": true,
+    "jsx": "react",
+    "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "dist",
+    "outDir": "compiled",
+    "pretty": true,
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
@@ -701,7 +752,7 @@ Object {
   },
   "exclude": Array [
     "node_modules",
-    "test",
+    "dist",
   ],
   "include": Array [
     "src",
