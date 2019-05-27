@@ -43,5 +43,19 @@ beforeAll(done => {
 })
 
 test.each(getFiles())('creates %s', file => {
-  expect(readFile(file)).toMatchSnapshot()
+  if (file === 'package.json') {
+    const data = readFile(file)
+    const { dependencies, devDependencies, peerDependencies } = data
+    const setAsymmetricMatchers = object => {
+      for (const key in object) object[key] = expect.any(String)
+      return object
+    }
+    expect(data).toMatchSnapshot({
+      dependencies: setAsymmetricMatchers(dependencies),
+      devDependencies: setAsymmetricMatchers(devDependencies),
+      peerDependencies: setAsymmetricMatchers(peerDependencies)
+    })
+  } else {
+    expect(readFile(file)).toMatchSnapshot()
+  }
 })
