@@ -39,7 +39,7 @@
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "postversion": "git push && git push --tags && npm publish",
     "release": "npm version -m 'Release v%s'",
-    "test": "jest",
+    "test": "jest __tests__",
     "version": "run-s check test changelog authors && git add ."
   },
   "repository": "github:tanem/generator-typescript-react-lib",
