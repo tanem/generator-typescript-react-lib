@@ -17,11 +17,11 @@
   ],
   "devDependencies": {
     "codecov": "3.5.0",
-    "jest": "23.6.0",
+    "jest": "24.8.0",
     "npm-run-all": "4.1.5",
     "prettier": "1.17.1",
     "shelljs-plugin-authors": "2.0.6",
-    "yeoman-test": "1.9.1"
+    "yeoman-test": "2.0.0"
   },
   "dependencies": {
     "chalk": "^2.4.2",
