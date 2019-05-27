@@ -1,8 +1,6 @@
 *.log
 .DS_Store
-cjs
-coverage
-es
-index.d.ts
-node_modules
-umd
+compiled/
+coverage/
+dist/
+node_modules/
