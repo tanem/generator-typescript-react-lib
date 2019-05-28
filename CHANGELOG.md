@@ -1,5 +1,29 @@
 # Changelog
 
+## [v1.0.12](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.12) (2019-05-29)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.11...v1.0.12)
+
+**Merged pull requests:**
+
+- Fix link [\#38](https://github.com/tanem/generator-typescript-react-lib/pull/38) ([tanem](https://github.com/tanem))
+- Revert yeoman-generator [\#37](https://github.com/tanem/generator-typescript-react-lib/pull/37) ([tanem](https://github.com/tanem))
+- Fix audit issues [\#35](https://github.com/tanem/generator-typescript-react-lib/pull/35) ([tanem](https://github.com/tanem))
+- Fix test script [\#34](https://github.com/tanem/generator-typescript-react-lib/pull/34) ([tanem](https://github.com/tanem))
+- Use asymmetric matchers for dep versions [\#33](https://github.com/tanem/generator-typescript-react-lib/pull/33) ([tanem](https://github.com/tanem))
+- Update dependency prop-types to ^15.7.2 [\#32](https://github.com/tanem/generator-typescript-react-lib/pull/32) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @babel/runtime to ^7.4.5 [\#31](https://github.com/tanem/generator-typescript-react-lib/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+- Rename template [\#30](https://github.com/tanem/generator-typescript-react-lib/pull/30) ([tanem](https://github.com/tanem))
+- Pin dependencies [\#29](https://github.com/tanem/generator-typescript-react-lib/pull/29) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure renovate [\#28](https://github.com/tanem/generator-typescript-react-lib/pull/28) ([tanem](https://github.com/tanem))
+- Update dev dependencies \(major\) [\#27](https://github.com/tanem/generator-typescript-react-lib/pull/27) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency yeoman-generator to v4 [\#26](https://github.com/tanem/generator-typescript-react-lib/pull/26) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [\#25](https://github.com/tanem/generator-typescript-react-lib/pull/25) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency yeoman-generator to ^3.2.0 [\#24](https://github.com/tanem/generator-typescript-react-lib/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency glob to ^7.1.4 [\#23](https://github.com/tanem/generator-typescript-react-lib/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency chalk to ^2.4.2 [\#22](https://github.com/tanem/generator-typescript-react-lib/pull/22) ([renovate[bot]](https://github.com/apps/renovate))
+- Update templates with latest preferences [\#21](https://github.com/tanem/generator-typescript-react-lib/pull/21) ([tanem](https://github.com/tanem))
+- Add renovate config [\#20](https://github.com/tanem/generator-typescript-react-lib/pull/20) ([tanem](https://github.com/tanem))
+
 ## [v1.0.11](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.11) (2018-10-15)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.10...v1.0.11)
 
