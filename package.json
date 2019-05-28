@@ -26,7 +26,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "glob": "^7.1.4",
-    "yeoman-generator": "^4.0.0"
+    "yeoman-generator": "^4.0.1"
   },
   "jest": {
     "testEnvironment": "node",
