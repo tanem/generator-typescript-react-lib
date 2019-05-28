@@ -20,7 +20,7 @@ To provide a basic starting point when authoring React libraries with Typescript
 - Configures continuous integration via [Travis](https://travis-ci.org/)
 - Configures code coverage analysis via [Codecov](https://codecov.io/)
 - Adds scripts for releasing to [npm](https://www.npmjs.com/)
-- Makes Universal Module Definition bundles available via [unpkg](Universal Module Definition bundles)
+- Makes Universal Module Definition bundles available via [unpkg](https://unpkg.com/)
 - Initialises [Git](https://git-scm.com/)
 
 ## Examples
