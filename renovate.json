@@ -3,8 +3,7 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "paths": ["generators/app/templates/_package.json"],
-      "enabled": true
+      "paths": ["generators/app/templates/_package.json"]
     },
     {
       "depTypeList": ["peerDependencies"],
