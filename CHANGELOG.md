@@ -1,6 +1,13 @@
 # Changelog
 
-## [v1.0.14](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.14) (2019-05-31)
+## [v1.0.15](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.15) (2019-05-31)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.14...v1.0.15)
+
+**Merged pull requests:**
+
+- Update dependency jest-prettyhtml-matchers to v1.0.16 [\#45](https://github.com/tanem/generator-typescript-react-lib/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.0.14](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.14) (2019-05-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.13...v1.0.14)
 
 **Merged pull requests:**
