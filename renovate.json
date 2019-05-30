@@ -1,10 +1,10 @@
 {
   "extends": ["config:base", ":disableRateLimiting"],
+  "npm": {
+    "fileMatch": ["package\\.json$"]
+  },
   "rangeStrategy": "bump",
   "packageRules": [
-    {
-      "paths": ["generators/app/templates/_package.json"]
-    },
     {
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "widen"
