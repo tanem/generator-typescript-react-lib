@@ -1,6 +1,17 @@
 # Changelog
 
-## [v1.0.13](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.13) (2019-05-29)
+## [v1.0.14](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.14) (2019-05-31)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.13...v1.0.14)
+
+**Merged pull requests:**
+
+- Update dependency del-cli to v2 [\#44](https://github.com/tanem/generator-typescript-react-lib/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [\#43](https://github.com/tanem/generator-typescript-react-lib/pull/43) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure Renovate [\#42](https://github.com/tanem/generator-typescript-react-lib/pull/42) ([tanem](https://github.com/tanem))
+- Meddling with versions to check renovate conf [\#41](https://github.com/tanem/generator-typescript-react-lib/pull/41) ([tanem](https://github.com/tanem))
+- Reconfigure renovate [\#40](https://github.com/tanem/generator-typescript-react-lib/pull/40) ([tanem](https://github.com/tanem))
+
+## [v1.0.13](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.13) (2019-05-28)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.12...v1.0.13)
 
 **Merged pull requests:**
