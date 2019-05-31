@@ -1,6 +1,16 @@
 # Changelog
 
-## [v1.0.15](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.15) (2019-05-31)
+## [v1.0.16](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.16) (2019-06-01)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.15...v1.0.16)
+
+**Merged pull requests:**
+
+- Update generator renovate conf [\#50](https://github.com/tanem/generator-typescript-react-lib/pull/50) ([tanem](https://github.com/tanem))
+- Update dependency rollup-plugin-node-resolve to v5.0.1 [\#49](https://github.com/tanem/generator-typescript-react-lib/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency rollup to v1.13.0 [\#48](https://github.com/tanem/generator-typescript-react-lib/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
+- Reconfigure Renovate [\#47](https://github.com/tanem/generator-typescript-react-lib/pull/47) ([tanem](https://github.com/tanem))
+
+## [v1.0.15](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.15) (2019-05-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.14...v1.0.15)
 
 **Merged pull requests:**
