@@ -389,6 +389,8 @@ Object {
   "extends": Array [
     "config:base",
     ":disableRateLimiting",
+    ":automergeMinor",
+    ":rebaseStalePrs",
   ],
   "packageRules": Array [
     Object {

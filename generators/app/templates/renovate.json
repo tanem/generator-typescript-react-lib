@@ -1,5 +1,10 @@
 {
-  "extends": ["config:base", ":disableRateLimiting"],
+  "extends": [
+    "config:base",
+    ":disableRateLimiting",
+    ":automergeMinor",
+    ":rebaseStalePrs"
+  ],
   "rangeStrategy": "bump",
   "packageRules": [
     {
