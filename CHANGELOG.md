@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.0.16](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.16) (2019-06-01)
+## [v1.0.17](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.17) (2019-06-02)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.16...v1.0.17)
+
+**Merged pull requests:**
+
+- Add eslint-plugin-react-hooks [\#52](https://github.com/tanem/generator-typescript-react-lib/pull/52) ([tanem](https://github.com/tanem))
+- Update dependency rollup to v1.13.1 [\#51](https://github.com/tanem/generator-typescript-react-lib/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.0.16](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.16) (2019-05-31)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.15...v1.0.16)
 
 **Merged pull requests:**
