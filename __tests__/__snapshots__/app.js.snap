@@ -269,9 +269,9 @@ exports[`creates index.js 1`] = `
 "'use strict'
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./cjs/test-package.production.min.js')
+  module.exports = require('./test-package.cjs.production.js')
 } else {
-  module.exports = require('./cjs/test-package.development.js')
+  module.exports = require('./test-package.cjs.development.js')
 }
 "
 `;
@@ -767,6 +767,12 @@ Object {
 
 exports[`creates tsconfig.json 1`] = `
 Object {
+  "compilerOptions": Object {
+    "allowJs": true,
+    "declaration": false,
+    "declarationDir": null,
+    "module": "commonjs",
+  },
   "exclude": Array [
     "node_modules",
   ],
