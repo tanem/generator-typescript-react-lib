@@ -1,8 +1,8 @@
 # <%= packageName %>
 
+[![npm version][npmv-image]][npmv-url]
 [![build status][travis-image]][travis-url]
 [![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
 [![npm downloads][npmd-image]][npmd-url]
 
 > <%= packageDescription %>
