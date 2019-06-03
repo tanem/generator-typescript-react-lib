@@ -41,8 +41,8 @@
   },
   "keywords": [
     "javascript",
-    "typescript",
-    "react"
+    "react",
+    "typescript"
   ],
   "author": "<%- author %>",
   "license": "MIT",
