@@ -13,7 +13,6 @@
     },
     {
       "depTypeList": ["devDependencies"],
-      "groupName": "dev dependencies",
       "rangeStrategy": "pin"
     }
   ]

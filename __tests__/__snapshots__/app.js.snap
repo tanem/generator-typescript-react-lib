@@ -407,7 +407,6 @@ Object {
       "depTypeList": Array [
         "devDependencies",
       ],
-      "groupName": "dev dependencies",
       "rangeStrategy": "pin",
     },
   ],
