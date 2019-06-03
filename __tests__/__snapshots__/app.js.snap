@@ -330,6 +330,7 @@ Object {
     "rollup-plugin-size-snapshot": Any<String>,
     "rollup-plugin-sourcemaps": Any<String>,
     "rollup-plugin-terser": Any<String>,
+    "shelljs": Any<String>,
     "shelljs-plugin-authors": Any<String>,
     "ts-jest": Any<String>,
     "typescript": Any<String>,
