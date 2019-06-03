@@ -109,9 +109,9 @@ SOFTWARE.
 exports[`creates README.md 1`] = `
 "# test-package
 
+[![npm version][npmv-image]][npmv-url]
 [![build status][travis-image]][travis-url]
 [![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
 [![npm downloads][npmd-image]][npmd-url]
 
 > Test package.
@@ -342,8 +342,8 @@ Object {
   "jsnext:main": "dist/test-package.esm.js",
   "keywords": Array [
     "javascript",
-    "typescript",
     "react",
+    "typescript",
   ],
   "license": "MIT",
   "main": "dist/index.js",
