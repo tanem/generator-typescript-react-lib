@@ -109,9 +109,9 @@ SOFTWARE.
 exports[`creates README.md 1`] = `
 "# test-package
 
+[![npm version][npmv-image]][npmv-url]
 [![build status][travis-image]][travis-url]
 [![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
 [![npm downloads][npmd-image]][npmd-url]
 
 > Test package.
@@ -152,8 +152,8 @@ $ npm install test-package --save
 
 There are also UMD builds available via [unpkg](https://unpkg.com/):
 
-- https://unpkg.com/test-package/umd/test-package.development.js
-- https://unpkg.com/test-package/umd/test-package.production.min.js
+- https://unpkg.com/test-package/dist/test-package.umd.development.js
+- https://unpkg.com/test-package/dist/test-package.umd.production.js
 
 For the non-minified development version, make sure you have already included:
 
@@ -215,8 +215,8 @@ You will also see any lint errors in the console.
 exports[`creates examples/basic-usage/package.json 1`] = `
 Object {
   "dependencies": Object {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-scripts": "1.1.5",
     "test-package": "latest",
   },
@@ -330,6 +330,7 @@ Object {
     "rollup-plugin-size-snapshot": Any<String>,
     "rollup-plugin-sourcemaps": Any<String>,
     "rollup-plugin-terser": Any<String>,
+    "shelljs": Any<String>,
     "shelljs-plugin-authors": Any<String>,
     "ts-jest": Any<String>,
     "typescript": Any<String>,
@@ -341,8 +342,8 @@ Object {
   "jsnext:main": "dist/test-package.esm.js",
   "keywords": Array [
     "javascript",
-    "typescript",
     "react",
+    "typescript",
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -406,7 +407,6 @@ Object {
       "depTypeList": Array [
         "devDependencies",
       ],
-      "groupName": "dev dependencies",
       "rangeStrategy": "pin",
     },
   ],

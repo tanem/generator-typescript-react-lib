@@ -5,6 +5,7 @@
     ":automergeMinor",
     ":rebaseStalePrs"
   ],
+  "ignorePaths": ["**/node_modules/**"],
   "npm": {
     "fileMatch": ["package\\.json$"]
   },

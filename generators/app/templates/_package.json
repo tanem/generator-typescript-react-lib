@@ -41,8 +41,8 @@
   },
   "keywords": [
     "javascript",
-    "typescript",
-    "react"
+    "react",
+    "typescript"
   ],
   "author": "<%- author %>",
   "license": "MIT",
@@ -101,6 +101,7 @@
     "rollup-plugin-size-snapshot": "0.9.0",
     "rollup-plugin-sourcemaps": "0.4.2",
     "rollup-plugin-terser": "5.0.0",
+    "shelljs": "0.8.3",
     "shelljs-plugin-authors": "2.0.6",
     "ts-jest": "24.0.2",
     "typescript": "3.5.1"

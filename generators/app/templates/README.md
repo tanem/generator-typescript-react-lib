@@ -1,8 +1,8 @@
 # <%= packageName %>
 
+[![npm version][npmv-image]][npmv-url]
 [![build status][travis-image]][travis-url]
 [![coverage status][codecov-image]][codecov-url]
-[![npm version][npmv-image]][npmv-url]
 [![npm downloads][npmd-image]][npmd-url]
 
 > <%= packageDescription %>
@@ -43,8 +43,8 @@ $ npm install <%= packageName %> --save
 
 There are also UMD builds available via [unpkg](https://unpkg.com/):
 
-- https://unpkg.com/<%= packageName %>/umd/<%= packageName %>.development.js
-- https://unpkg.com/<%= packageName %>/umd/<%= packageName %>.production.min.js
+- https://unpkg.com/<%= packageName %>/dist/<%= packageName %>.umd.development.js
+- https://unpkg.com/<%= packageName %>/dist/<%= packageName %>.umd.production.js
 
 For the non-minified development version, make sure you have already included:
 
