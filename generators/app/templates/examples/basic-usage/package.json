@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "1.1.5",
+    "react-scripts": "3.0.1",
     "<%= packageName %>": "latest"
   },
   "scripts": {
