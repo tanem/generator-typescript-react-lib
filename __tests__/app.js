@@ -20,9 +20,10 @@ const readFile = file => {
   return path.extname(file) === '.json' ? JSON.parse(data) : data
 }
 
-const usernameMock = jest.fn().mockResolvedValue('mockusername')
-const nameMock = jest.fn().mockResolvedValue('Mock Name')
 const emailMock = jest.fn().mockResolvedValue('mock.user@mock.com')
+const nameMock = jest.fn().mockResolvedValue('Mock Name')
+const usernameMock = jest.fn().mockResolvedValue('mockusername')
+const packageName = 'test-package'
 
 beforeAll(done => {
   helpers
@@ -30,7 +31,7 @@ beforeAll(done => {
     .withPrompts({
       author: 'John Smith <john.smith@js.com>',
       packageDescription: 'Test package.',
-      packageName: 'test-package',
+      packageName,
       umdGlobalName: 'TestPkg',
       username: 'jsmith'
     })
@@ -43,17 +44,27 @@ beforeAll(done => {
 })
 
 test.each(getFiles())('creates %s', file => {
-  if (file === 'package.json') {
+  if (path.basename(file) === 'package.json') {
     const data = readFile(file)
     const { dependencies, devDependencies, peerDependencies } = data
     const setAsymmetricMatchers = object => {
-      for (const key in object) object[key] = expect.any(String)
+      for (const key in object) {
+        if (key !== packageName) {
+          object[key] = expect.any(String)
+        }
+      }
       return object
     }
     expect(data).toMatchSnapshot({
-      dependencies: setAsymmetricMatchers(dependencies),
-      devDependencies: setAsymmetricMatchers(devDependencies),
-      peerDependencies: setAsymmetricMatchers(peerDependencies)
+      ...(dependencies
+        ? { dependencies: setAsymmetricMatchers(dependencies) }
+        : {}),
+      ...(devDependencies
+        ? { devDependencies: setAsymmetricMatchers(devDependencies) }
+        : {}),
+      ...(peerDependencies
+        ? { peerDependencies: setAsymmetricMatchers(peerDependencies) }
+        : {})
     })
   } else {
     expect(readFile(file)).toMatchSnapshot()

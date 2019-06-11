@@ -215,9 +215,9 @@ You will also see any lint errors in the console.
 exports[`creates examples/basic-usage/package.json 1`] = `
 Object {
   "dependencies": Object {
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-scripts": "1.1.5",
+    "react": Any<String>,
+    "react-dom": Any<String>,
+    "react-scripts": Any<String>,
     "test-package": "latest",
   },
   "description": "TestPkg Basic Usage Example",
