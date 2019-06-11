@@ -257,11 +257,11 @@ exports[`creates examples/basic-usage/public/svg.svg 1`] = `
 `;
 
 exports[`creates examples/basic-usage/src/index.js 1`] = `
-"import React from 'react'
+"import C from 'test-package'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import ReactSVG from 'react-svg'
 
-ReactDOM.render(<ReactSVG src=\\"svg.svg\\" />, document.getElementById('root'))
+ReactDOM.render(<C />, document.getElementById('root'))
 "
 `;
 
