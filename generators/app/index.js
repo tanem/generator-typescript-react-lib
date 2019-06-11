@@ -49,6 +49,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    // prettier-ignore
     this.props.repoURL = `github:${this.props.username}/${
       this.props.packageName
     }`
