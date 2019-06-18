@@ -1,10 +1,5 @@
 {
-  "extends": [
-    "config:base",
-    ":disableRateLimiting",
-    ":automergeMinor",
-    ":rebaseStalePrs"
-  ],
+  "extends": ["config:base", ":disableRateLimiting", ":rebaseStalePrs"],
   "ignorePaths": ["**/node_modules/**"],
   "npm": {
     "fileMatch": ["package\\.json$"]
@@ -17,6 +12,7 @@
     },
     {
       "depTypeList": ["devDependencies"],
+      "groupName": "dev dependencies",
       "rangeStrategy": "pin"
     }
   ]
