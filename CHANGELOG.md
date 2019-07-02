@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.24](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.24) (2019-07-03)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.23...v1.0.24)
+
+**Merged pull requests:**
+
+- Update dev dependencies [\#93](https://github.com/tanem/generator-typescript-react-lib/pull/93) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.23](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.23) (2019-07-02)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.22...v1.0.23)
 
