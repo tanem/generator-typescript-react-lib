@@ -1,11 +1,17 @@
 # Changelog
 
-## [v1.0.25](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.25) (2019-07-11)
+## [v1.0.26](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.26) (2019-07-11)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.25...v1.0.26)
+
+**Merged pull requests:**
+
+- Update dependency jest-prettyhtml-matchers to v1.0.22 [\#96](https://github.com/tanem/generator-typescript-react-lib/pull/96) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.0.25](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.25) (2019-07-10)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.24...v1.0.25)
 
 **Merged pull requests:**
 
-- Update dependency @babel/runtime to ^7.5.4 [\#95](https://github.com/tanem/generator-typescript-react-lib/pull/95) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dev dependencies [\#94](https://github.com/tanem/generator-typescript-react-lib/pull/94) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.0.24](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.24) (2019-07-02)
@@ -56,6 +62,7 @@
 
 **Merged pull requests:**
 
+- Update dependency @babel/runtime to ^7.5.4 [\#95](https://github.com/tanem/generator-typescript-react-lib/pull/95) ([renovate[bot]](https://github.com/apps/renovate))
 - Fix test setup [\#73](https://github.com/tanem/generator-typescript-react-lib/pull/73) ([tanem](https://github.com/tanem))
 - Update dependency rollup to v1.15.1 [\#72](https://github.com/tanem/generator-typescript-react-lib/pull/72) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency rollup to v1.15.0 [\#71](https://github.com/tanem/generator-typescript-react-lib/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
@@ -204,6 +211,7 @@
 **Merged pull requests:**
 
 - Use shelljs-plugin-authors [\#11](https://github.com/tanem/generator-typescript-react-lib/pull/11) ([tanem](https://github.com/tanem))
+- Add changelog generation scripts [\#10](https://github.com/tanem/generator-typescript-react-lib/pull/10) ([tanem](https://github.com/tanem))
 - Use shelljs-authors and update deps [\#9](https://github.com/tanem/generator-typescript-react-lib/pull/9) ([tanem](https://github.com/tanem))
 
 ## [v1.0.4](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.4) (2018-08-30)
@@ -227,15 +235,17 @@
 
 - Add travis reminder [\#6](https://github.com/tanem/generator-typescript-react-lib/pull/6) ([tanem](https://github.com/tanem))
 - Update docs [\#5](https://github.com/tanem/generator-typescript-react-lib/pull/5) ([tanem](https://github.com/tanem))
-- Tidy up [\#4](https://github.com/tanem/generator-typescript-react-lib/pull/4) ([tanem](https://github.com/tanem))
 
 ## [v1.0.1](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.1) (2018-08-08)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.0...v1.0.1)
 
+**Merged pull requests:**
+
+- Tidy up [\#4](https://github.com/tanem/generator-typescript-react-lib/pull/4) ([tanem](https://github.com/tanem))
+
 ## [v1.0.0](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.0) (2018-08-07)
 **Merged pull requests:**
 
-- Add changelog generation scripts [\#10](https://github.com/tanem/generator-typescript-react-lib/pull/10) ([tanem](https://github.com/tanem))
 - Housekeeping [\#3](https://github.com/tanem/generator-typescript-react-lib/pull/3) ([tanem](https://github.com/tanem))
 - Fix template names [\#2](https://github.com/tanem/generator-typescript-react-lib/pull/2) ([tanem](https://github.com/tanem))
 - Add npm run scripts [\#1](https://github.com/tanem/generator-typescript-react-lib/pull/1) ([tanem](https://github.com/tanem))
