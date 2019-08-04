@@ -1,3 +1,4 @@
-**/dist/
-**/node_modules/
+compiled/
 coverage/
+dist/
+node_modules/
