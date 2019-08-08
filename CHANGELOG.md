@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.30](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.30) (2019-08-09)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.29...v1.0.30)
+
+**Merged pull requests:**
+
+- Add .mailmap [#109](https://github.com/tanem/generator-typescript-react-lib/pull/109) ([tanem](https://github.com/tanem))
+- Update dev dependencies [#105](https://github.com/tanem/generator-typescript-react-lib/pull/105) ([renovate[bot]](https://github.com/apps/renovate))
+- Use tanem-scripts [#108](https://github.com/tanem/generator-typescript-react-lib/pull/108) ([tanem](https://github.com/tanem))
+
 ## [v1.0.29](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.29) (2019-08-05)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.28...v1.0.29)
 
