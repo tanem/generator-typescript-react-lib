@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.32](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.32) (2019-08-13)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.31...v1.0.32)
+
+**Merged pull requests:**
+
+- Update docs [#114](https://github.com/tanem/generator-typescript-react-lib/pull/114) ([tanem](https://github.com/tanem))
+
 ## [v1.0.31](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.31) (2019-08-11)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.30...v1.0.31)
 
