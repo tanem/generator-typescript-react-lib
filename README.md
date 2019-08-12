@@ -7,22 +7,40 @@
 
 > A [Yeoman](http://yeoman.io) generator for [React](https://reactjs.org) libs written with [Typescript](https://www.typescriptlang.org).
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Background](#background)
+- [Features](#features)
+- [Installation](#installation)
+- [Common Workflows](#common-workflows)
+  - [Setup](#setup)
+  - [Development](#development)
+  - [Testing](#testing)
+  - [Publishing](#publishing)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Background
 
 To provide a basic starting point when authoring React libraries with Typescript. By design not all use-cases will be handled, so some post-generation modifications may be required.
 
 ## Features
 
-- Generates CommonJS, ES module, and Universal Module Definition bundles via [Rollup](https://rollupjs.org)
-- Tests bundles via [Jest](https://jestjs.io/)
-- Generates Typescript type declarations for publishing
-- Outputs, strips, or wraps [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) declarations according to bundle type
-- Configures continuous integration via [Travis](https://travis-ci.org/)
-- Configures code coverage analysis via [Codecov](https://codecov.io/)
-- Configures [Renovate](https://renovatebot.com/) for dependency management
-- Adds scripts for releasing to [npm](https://www.npmjs.com/)
-- Makes Universal Module Definition bundles available via [unpkg](https://unpkg.com/)
-- Initialises [Git](https://git-scm.com/)
+- Generates CommonJS, ES module, and Universal Module Definition bundles via [Rollup](https://rollupjs.org).
+- Tests bundles via [Jest](https://jestjs.io/).
+- Generates Typescript type declarations for publishing.
+- Outputs, strips, or wraps [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) declarations according to bundle type.
+- Configures continuous integration via [Travis](https://travis-ci.org/).
+- Configures code coverage analysis via [Codecov](https://codecov.io/).
+- Configures [Renovate](https://renovatebot.com/) for dependency management.
+- Adds scripts for releasing to [npm](https://www.npmjs.com/).
+- Makes Universal Module Definition bundles available via [unpkg](https://unpkg.com/).
+- Initialises [Git](https://git-scm.com/).
 
 ## Installation
 
@@ -40,6 +58,13 @@ $ yo typescript-react-lib
 ```
 
 ## Common Workflows
+
+### Setup
+
+1. Create a new GitHub repository.
+2. [Install/enable](https://renovatebot.com/docs/install-github-app/) the Renovate GitHub app.
+3. [Integrate](https://travis-ci.org/account/repositories) Travis CI.
+4. Use this generator to create your lib.
 
 ### Development
 
