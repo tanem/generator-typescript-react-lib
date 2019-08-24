@@ -12,7 +12,7 @@ exports[`creates .eslintrc.js 1`] = `
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project: 'tsconfig.eslint.json',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
@@ -761,6 +761,26 @@ Object {
   ],
   "include": Array [
     "src",
+  ],
+}
+`;
+
+exports[`creates tsconfig.eslint.json 1`] = `
+Object {
+  "compilerOptions": Object {
+    "allowJs": true,
+    "checkJs": true,
+  },
+  "extends": "./tsconfig.json",
+  "files": Array [
+    "index.js",
+    "rollup.config.js",
+  ],
+  "include": Array [
+    "examples",
+    "scripts",
+    "src",
+    "test",
   ],
 }
 `;
