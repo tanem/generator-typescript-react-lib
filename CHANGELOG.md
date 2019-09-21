@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.0.34](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.34) (2019-09-22)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.33...v1.0.34)
+
+**Merged pull requests:**
+
+- Update dependency react-scripts to v3.1.2 [#122](https://github.com/tanem/generator-typescript-react-lib/pull/122) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies (major) [#121](https://github.com/tanem/generator-typescript-react-lib/pull/121) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @babel/runtime to ^7.6.0 [#120](https://github.com/tanem/generator-typescript-react-lib/pull/120) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dev dependencies [#119](https://github.com/tanem/generator-typescript-react-lib/pull/119) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.33](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.33) (2019-08-25)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.32...v1.0.33)
 
