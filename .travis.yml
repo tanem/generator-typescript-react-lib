@@ -1,7 +1,8 @@
 language: node_js
 notifications:
   email: false
+if: type = pull_request
 script:
   - npm run check
   - npm t
-  - $(npm bin)/codecov
+  - npm run coverage

@@ -1,19 +1,27 @@
 {
-  "extends": ["config:base", ":disableRateLimiting", ":rebaseStalePrs"],
+  "extends": [
+    "config:js-lib",
+    ":rebaseStalePrs",
+    ":automergeMinor",
+    ":label(internal)",
+    ":masterIssue"
+  ],
   "ignorePaths": ["**/node_modules/**"],
   "npm": {
     "fileMatch": ["package\\.json$"]
   },
-  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "stabilityDays": 3,
   "packageRules": [
     {
-      "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "widen"
+      "sourceUrlPrefixes": ["https://github.com/tanem/"],
+      "stabilityDays": 0
     },
     {
-      "depTypeList": ["devDependencies"],
-      "groupName": "dev dependencies",
-      "rangeStrategy": "pin"
+      "depTypeList": ["dependencies"],
+      "rangeStrategy": "bump"
     }
   ]
 }
