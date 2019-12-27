@@ -34,14 +34,11 @@
     "collectCoverage": true
   },
   "scripts": {
-    "authors": "tanem-scripts authors > AUTHORS",
-    "changelog": "tanem-scripts changelog -f v$npm_package_version > CHANGELOG.md",
     "check": "prettier --list-different \"**/*.{js,ts,tsx}\"",
+    "coverage": "codecov",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
-    "postversion": "git push && git push --tags && npm publish",
-    "release": "npm version -m 'Release v%s'",
-    "test": "jest __tests__",
-    "version": "run-s check test changelog authors && git add ."
+    "release": "tanem-scripts release", 
+    "test": "jest __tests__"
   },
   "repository": "github:tanem/generator-typescript-react-lib",
   "license": "MIT"
