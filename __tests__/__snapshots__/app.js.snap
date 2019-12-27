@@ -76,9 +76,10 @@ exports[`creates .travis.yml 1`] = `
 "language: node_js
 notifications:
   email: false
+if: type = pull_request
 script:
   - npm t
-  - $(npm bin)/codecov
+  - npm run coverage
 "
 `;
 
@@ -184,6 +185,9 @@ MIT
 
 exports[`creates codecov.yml 1`] = `
 "comment: off
+coverage:
+  status:
+    patch: off
 "
 `;
 
@@ -358,10 +362,8 @@ Object {
     "url": "github:jsmith/test-package",
   },
   "scripts": Object {
-    "authors": "tanem-scripts authors > AUTHORS",
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
-    "changelog": "tanem-scripts changelog -f v$npm_package_version > CHANGELOG.md",
     "check:format": "prettier --list-different \\"**/*.{js,ts,tsx}\\"",
     "check:types": "tsc --noEmit",
     "clean": "run-p clean:*",
@@ -369,11 +371,11 @@ Object {
     "clean:coverage": "del coverage",
     "clean:dist": "del dist",
     "compile": "tsc -p tsconfig.base.json",
+    "coverage": "codecov",
     "format": "prettier --write \\"**/*.{js,ts,tsx}\\"",
     "lint": "eslint . --ext .js,.ts",
     "postbundle": "del compiled && cp-cli ./index.js ./dist/index.js",
-    "postversion": "git push && git push --tags && npm publish",
-    "release": "npm version -m 'Release v%s'",
+    "release": "tanem-scripts release",
     "test": "run-s check:* lint build test:*",
     "test:cjs": "jest --config ./scripts/jest/config.cjs.js",
     "test:cjsprod": "cross-env NODE_ENV=production jest --config ./scripts/jest/config.cjs.js",
@@ -381,7 +383,6 @@ Object {
     "test:src": "jest --config ./scripts/jest/config.src.js",
     "test:umd": "jest --config ./scripts/jest/config.umd.js",
     "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
-    "version": "run-s test changelog authors && git add .",
   },
   "typings": "dist/index.d.ts",
   "version": "0.0.1",
@@ -391,26 +392,33 @@ Object {
 exports[`creates renovate.json 1`] = `
 Object {
   "extends": Array [
-    "config:base",
-    ":disableRateLimiting",
+    "config:js-lib",
     ":rebaseStalePrs",
+    ":automergeMinor",
+    ":label(internal)",
+    ":masterIssue",
   ],
+  "ignorePaths": Array [
+    "**/node_modules/**",
+  ],
+  "lockFileMaintenance": Object {
+    "enabled": true,
+  },
   "packageRules": Array [
     Object {
-      "depTypeList": Array [
-        "peerDependencies",
+      "sourceUrlPrefixes": Array [
+        "https://github.com/tanem/",
       ],
-      "rangeStrategy": "widen",
+      "stabilityDays": 0,
     },
     Object {
       "depTypeList": Array [
-        "devDependencies",
+        "dependencies",
       ],
-      "groupName": "dev dependencies",
-      "rangeStrategy": "pin",
+      "rangeStrategy": "bump",
     },
   ],
-  "rangeStrategy": "bump",
+  "stabilityDays": 3,
 }
 `;
 

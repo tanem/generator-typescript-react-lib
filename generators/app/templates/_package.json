@@ -30,7 +30,7 @@
     "test:es": "jest --config ./scripts/jest/config.es.js",
     "test:src": "jest --config ./scripts/jest/config.src.js",
     "test:umd": "jest --config ./scripts/jest/config.umd.js",
-    "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js",
+    "test:umdprod": "jest --config ./scripts/jest/config.umdprod.js"
   },
   "repository": {
     "type": "git",
