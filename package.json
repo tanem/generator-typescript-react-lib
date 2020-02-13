@@ -1,6 +1,6 @@
 {
   "name": "generator-typescript-react-lib",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "description": "A Yeoman generator for React libs written with Typescript.",
   "homepage": "https://github.com/tanem/generator-typescript-react-lib",
   "bugs": "https://github.com/tanem/generator-typescript-react-lib/issues",
@@ -37,7 +37,7 @@
     "check": "prettier --list-different \"**/*.{js,ts,tsx}\"",
     "coverage": "codecov",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
-    "release": "tanem-scripts release", 
+    "release": "tanem-scripts release",
     "test": "jest __tests__"
   },
   "repository": "github:tanem/generator-typescript-react-lib",

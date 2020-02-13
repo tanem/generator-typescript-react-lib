@@ -1,323 +1,374 @@
 # Changelog
 
-## [v1.0.34](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.34) (2019-09-22)
+## [v1.0.35](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.35) (2020-02-13)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.34...v1.0.35)
+
+#### :house: Internal
+
+- [#177](https://github.com/tanem/generator-typescript-react-lib/pull/177) Update dependency codecov to v3.6.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#176](https://github.com/tanem/generator-typescript-react-lib/pull/176) Update dependency codecov to v3.6.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#156](https://github.com/tanem/generator-typescript-react-lib/pull/156) Update dependency tanem-scripts to v5.0.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#158](https://github.com/tanem/generator-typescript-react-lib/pull/158) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#170](https://github.com/tanem/generator-typescript-react-lib/pull/170) Update dependency jest to v25 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#161](https://github.com/tanem/generator-typescript-react-lib/pull/161) Update dependency yeoman-test to v2.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#171](https://github.com/tanem/generator-typescript-react-lib/pull/171) Update dependency codecov to v3.6.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#175](https://github.com/tanem/generator-typescript-react-lib/pull/175) Fix tests ([@tanem](https://github.com/tanem))
+- [#174](https://github.com/tanem/generator-typescript-react-lib/pull/174) Reconfigure renovate ([@tanem](https://github.com/tanem))
+- [#154](https://github.com/tanem/generator-typescript-react-lib/pull/154) Update typescript-eslint monorepo to v2.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#142](https://github.com/tanem/generator-typescript-react-lib/pull/142) Update dependency eslint-config-prettier to v6.9.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#153](https://github.com/tanem/generator-typescript-react-lib/pull/153) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#135](https://github.com/tanem/generator-typescript-react-lib/pull/135) Update dependency @types/jest to v24.0.25 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#152](https://github.com/tanem/generator-typescript-react-lib/pull/152) Update typescript-eslint monorepo to v2.13.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#129](https://github.com/tanem/generator-typescript-react-lib/pull/129) Update react monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#151](https://github.com/tanem/generator-typescript-react-lib/pull/151) Update dependency typescript to v3.7.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#150](https://github.com/tanem/generator-typescript-react-lib/pull/150) Update dependency ts-jest to v24.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#149](https://github.com/tanem/generator-typescript-react-lib/pull/149) Update dependency tanem-scripts to v5.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#148](https://github.com/tanem/generator-typescript-react-lib/pull/148) Update dependency rollup-plugin-terser to v5.1.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#147](https://github.com/tanem/generator-typescript-react-lib/pull/147) Update dependency rollup-plugin-filesize to v6.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#146](https://github.com/tanem/generator-typescript-react-lib/pull/146) Update dependency rollup to v1.27.14 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#133](https://github.com/tanem/generator-typescript-react-lib/pull/133) Update dependency react-scripts to v3.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#145](https://github.com/tanem/generator-typescript-react-lib/pull/145) Update dependency prettier to v1.19.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#144](https://github.com/tanem/generator-typescript-react-lib/pull/144) Update dependency jest-prettyhtml-matchers to v1.0.44 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#143](https://github.com/tanem/generator-typescript-react-lib/pull/143) Update dependency eslint-plugin-react to v7.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#141](https://github.com/tanem/generator-typescript-react-lib/pull/141) Update dependency eslint to v6.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#140](https://github.com/tanem/generator-typescript-react-lib/pull/140) Update dependency enzyme-adapter-react-16 to v1.15.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#139](https://github.com/tanem/generator-typescript-react-lib/pull/139) Update dependency enzyme to v3.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#138](https://github.com/tanem/generator-typescript-react-lib/pull/138) Update dependency @types/react-dom to v16.9.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#137](https://github.com/tanem/generator-typescript-react-lib/pull/137) Update dependency @types/react to v16.9.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#128](https://github.com/tanem/generator-typescript-react-lib/pull/128) Update dependency glob to ^7.1.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#131](https://github.com/tanem/generator-typescript-react-lib/pull/131) Update babel monorepo ([@renovate[bot]](https://github.com/apps/renovate))
+- [#132](https://github.com/tanem/generator-typescript-react-lib/pull/132) Update dependency chalk to v3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#134](https://github.com/tanem/generator-typescript-react-lib/pull/134) Update with latest prefs ([@tanem](https://github.com/tanem))
+- [#130](https://github.com/tanem/generator-typescript-react-lib/pull/130) Update dependency tanem-scripts to v5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#125](https://github.com/tanem/generator-typescript-react-lib/pull/125) Update react monorepo to v16.10.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#124](https://github.com/tanem/generator-typescript-react-lib/pull/124) Update dependency @babel/runtime to ^7.6.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#123](https://github.com/tanem/generator-typescript-react-lib/pull/123) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#126](https://github.com/tanem/generator-typescript-react-lib/pull/126) Update dependency react-scripts to v3.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
+## [v1.0.34](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.34) (2019-09-21)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.33...v1.0.34)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency react-scripts to v3.1.2 [#122](https://github.com/tanem/generator-typescript-react-lib/pull/122) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies (major) [#121](https://github.com/tanem/generator-typescript-react-lib/pull/121) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency @babel/runtime to ^7.6.0 [#120](https://github.com/tanem/generator-typescript-react-lib/pull/120) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#119](https://github.com/tanem/generator-typescript-react-lib/pull/119) ([renovate[bot]](https://github.com/apps/renovate))
+- [#122](https://github.com/tanem/generator-typescript-react-lib/pull/122) Update dependency react-scripts to v3.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#121](https://github.com/tanem/generator-typescript-react-lib/pull/121) Update dev dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#120](https://github.com/tanem/generator-typescript-react-lib/pull/120) Update dependency @babel/runtime to ^7.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#119](https://github.com/tanem/generator-typescript-react-lib/pull/119) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.33](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.33) (2019-08-25)
+## [v1.0.33](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.33) (2019-08-24)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.32...v1.0.33)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dev dependencies [#117](https://github.com/tanem/generator-typescript-react-lib/pull/117) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies (major) [#116](https://github.com/tanem/generator-typescript-react-lib/pull/116) ([renovate[bot]](https://github.com/apps/renovate))
-- Remove test folder from git [#118](https://github.com/tanem/generator-typescript-react-lib/pull/118) ([tanem](https://github.com/tanem))
-- Update dependency react-scripts to v3.1.1 [#115](https://github.com/tanem/generator-typescript-react-lib/pull/115) ([renovate[bot]](https://github.com/apps/renovate))
+- [#117](https://github.com/tanem/generator-typescript-react-lib/pull/117) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#116](https://github.com/tanem/generator-typescript-react-lib/pull/116) Update dev dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#118](https://github.com/tanem/generator-typescript-react-lib/pull/118) Remove test folder from git ([@tanem](https://github.com/tanem))
+- [#115](https://github.com/tanem/generator-typescript-react-lib/pull/115) Update dependency react-scripts to v3.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.32](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.32) (2019-08-13)
+## [v1.0.32](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.32) (2019-08-12)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.31...v1.0.32)
 
-**Merged pull requests:**
+#### :memo: Documentation
 
-- Update docs [#114](https://github.com/tanem/generator-typescript-react-lib/pull/114) ([tanem](https://github.com/tanem))
+- [#114](https://github.com/tanem/generator-typescript-react-lib/pull/114) Update docs ([@tanem](https://github.com/tanem))
 
-## [v1.0.31](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.31) (2019-08-11)
+## [v1.0.31](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.31) (2019-08-10)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.30...v1.0.31)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency jest-prettyhtml-matchers to v1.0.27 [#113](https://github.com/tanem/generator-typescript-react-lib/pull/113) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency react-scripts to v3.1.0 [#112](https://github.com/tanem/generator-typescript-react-lib/pull/112) ([renovate[bot]](https://github.com/apps/renovate))
-- Update react monorepo to v16.9.0 [#111](https://github.com/tanem/generator-typescript-react-lib/pull/111) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#110](https://github.com/tanem/generator-typescript-react-lib/pull/110) ([renovate[bot]](https://github.com/apps/renovate))
+- [#113](https://github.com/tanem/generator-typescript-react-lib/pull/113) Update dependency jest-prettyhtml-matchers to v1.0.27 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#112](https://github.com/tanem/generator-typescript-react-lib/pull/112) Update dependency react-scripts to v3.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#111](https://github.com/tanem/generator-typescript-react-lib/pull/111) Update react monorepo to v16.9.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#110](https://github.com/tanem/generator-typescript-react-lib/pull/110) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.30](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.30) (2019-08-09)
+## [v1.0.30](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.30) (2019-08-08)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.29...v1.0.30)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Add .mailmap [#109](https://github.com/tanem/generator-typescript-react-lib/pull/109) ([tanem](https://github.com/tanem))
-- Update dev dependencies [#105](https://github.com/tanem/generator-typescript-react-lib/pull/105) ([renovate[bot]](https://github.com/apps/renovate))
-- Use tanem-scripts [#108](https://github.com/tanem/generator-typescript-react-lib/pull/108) ([tanem](https://github.com/tanem))
+- [#109](https://github.com/tanem/generator-typescript-react-lib/pull/109) Add .mailmap ([@tanem](https://github.com/tanem))
+- [#105](https://github.com/tanem/generator-typescript-react-lib/pull/105) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#108](https://github.com/tanem/generator-typescript-react-lib/pull/108) Use tanem-scripts ([@tanem](https://github.com/tanem))
 
-## [v1.0.29](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.29) (2019-08-05)
+## [v1.0.29](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.29) (2019-08-04)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.28...v1.0.29)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dev dependencies [#102](https://github.com/tanem/generator-typescript-react-lib/pull/102) ([renovate[bot]](https://github.com/apps/renovate))
-- Fix ignore files [#104](https://github.com/tanem/generator-typescript-react-lib/pull/104) ([tanem](https://github.com/tanem))
+- [#102](https://github.com/tanem/generator-typescript-react-lib/pull/102) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#104](https://github.com/tanem/generator-typescript-react-lib/pull/104) Fix ignore files ([@tanem](https://github.com/tanem))
 
-## [v1.0.28](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.28) (2019-07-23)
+## [v1.0.28](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.28) (2019-07-22)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.27...v1.0.28)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency @babel/runtime to ^7.5.5 [#100](https://github.com/tanem/generator-typescript-react-lib/pull/100) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#99](https://github.com/tanem/generator-typescript-react-lib/pull/99) ([renovate[bot]](https://github.com/apps/renovate))
-- Update changelog generation script [#101](https://github.com/tanem/generator-typescript-react-lib/pull/101) ([tanem](https://github.com/tanem))
+- [#100](https://github.com/tanem/generator-typescript-react-lib/pull/100) Update dependency @babel/runtime to ^7.5.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#99](https://github.com/tanem/generator-typescript-react-lib/pull/99) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#101](https://github.com/tanem/generator-typescript-react-lib/pull/101) Update changelog generation script ([@tanem](https://github.com/tanem))
 
 ## [v1.0.27](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.27) (2019-07-16)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.26...v1.0.27)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Fix audit issues [#98](https://github.com/tanem/generator-typescript-react-lib/pull/98) ([tanem](https://github.com/tanem))
-- Update dev dependencies [#97](https://github.com/tanem/generator-typescript-react-lib/pull/97) ([renovate[bot]](https://github.com/apps/renovate))
+- [#97](https://github.com/tanem/generator-typescript-react-lib/pull/97) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.26](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.26) (2019-07-11)
+#### :question: Unlabelled
+
+- [#98](https://github.com/tanem/generator-typescript-react-lib/pull/98) Fix audit issues ([@tanem](https://github.com/tanem))
+
+## [v1.0.26](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.26) (2019-07-10)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.25...v1.0.26)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency jest-prettyhtml-matchers to v1.0.22 [#96](https://github.com/tanem/generator-typescript-react-lib/pull/96) ([renovate[bot]](https://github.com/apps/renovate))
+- [#96](https://github.com/tanem/generator-typescript-react-lib/pull/96) Update dependency jest-prettyhtml-matchers to v1.0.22 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.25](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.25) (2019-07-11)
+## [v1.0.25](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.25) (2019-07-10)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.24...v1.0.25)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency @babel/runtime to ^7.5.4 [#95](https://github.com/tanem/generator-typescript-react-lib/pull/95) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#94](https://github.com/tanem/generator-typescript-react-lib/pull/94) ([renovate[bot]](https://github.com/apps/renovate))
+- [#95](https://github.com/tanem/generator-typescript-react-lib/pull/95) Update dependency @babel/runtime to ^7.5.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#94](https://github.com/tanem/generator-typescript-react-lib/pull/94) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.24](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.24) (2019-07-03)
+## [v1.0.24](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.24) (2019-07-02)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.23...v1.0.24)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dev dependencies [#93](https://github.com/tanem/generator-typescript-react-lib/pull/93) ([renovate[bot]](https://github.com/apps/renovate))
+- [#93](https://github.com/tanem/generator-typescript-react-lib/pull/93) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.0.23](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.23) (2019-07-02)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.22...v1.0.23)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dev dependencies [#92](https://github.com/tanem/generator-typescript-react-lib/pull/92) ([renovate[bot]](https://github.com/apps/renovate))
+- [#92](https://github.com/tanem/generator-typescript-react-lib/pull/92) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.22](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.22) (2019-06-30)
+## [v1.0.22](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.22) (2019-06-29)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.21...v1.0.22)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dev dependencies (major) [#91](https://github.com/tanem/generator-typescript-react-lib/pull/91) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#90](https://github.com/tanem/generator-typescript-react-lib/pull/90) ([renovate[bot]](https://github.com/apps/renovate))
+- [#91](https://github.com/tanem/generator-typescript-react-lib/pull/91) Update dev dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#90](https://github.com/tanem/generator-typescript-react-lib/pull/90) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.21](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.21) (2019-06-19)
+## [v1.0.21](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.21) (2019-06-18)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.20...v1.0.21)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency eslint-config-prettier to v5 [#89](https://github.com/tanem/generator-typescript-react-lib/pull/89) ([renovate[bot]](https://github.com/apps/renovate))
-- Reconfigure renovate [#88](https://github.com/tanem/generator-typescript-react-lib/pull/88) ([tanem](https://github.com/tanem))
-- Update dependency rollup-plugin-filesize to v6.1.1 [#87](https://github.com/tanem/generator-typescript-react-lib/pull/87) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency jest-prettyhtml-matchers to v1.0.17 [#86](https://github.com/tanem/generator-typescript-react-lib/pull/86) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup-plugin-node-resolve to v5.0.3 [#85](https://github.com/tanem/generator-typescript-react-lib/pull/85) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency @types/jest to v24.0.15 [#84](https://github.com/tanem/generator-typescript-react-lib/pull/84) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.6 [#83](https://github.com/tanem/generator-typescript-react-lib/pull/83) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.5 [#81](https://github.com/tanem/generator-typescript-react-lib/pull/81) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.4 [#80](https://github.com/tanem/generator-typescript-react-lib/pull/80) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency @types/react to v16.8.20 [#79](https://github.com/tanem/generator-typescript-react-lib/pull/79) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency typescript to v3.5.2 [#78](https://github.com/tanem/generator-typescript-react-lib/pull/78) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.3 [#77](https://github.com/tanem/generator-typescript-react-lib/pull/77) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup-plugin-node-resolve to v5.0.2 [#76](https://github.com/tanem/generator-typescript-react-lib/pull/76) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.2 [#75](https://github.com/tanem/generator-typescript-react-lib/pull/75) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency @types/jest to v24.0.14 [#74](https://github.com/tanem/generator-typescript-react-lib/pull/74) ([renovate[bot]](https://github.com/apps/renovate))
+- [#89](https://github.com/tanem/generator-typescript-react-lib/pull/89) Update dependency eslint-config-prettier to v5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#88](https://github.com/tanem/generator-typescript-react-lib/pull/88) Reconfigure renovate ([@tanem](https://github.com/tanem))
+- [#87](https://github.com/tanem/generator-typescript-react-lib/pull/87) Update dependency rollup-plugin-filesize to v6.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#86](https://github.com/tanem/generator-typescript-react-lib/pull/86) Update dependency jest-prettyhtml-matchers to v1.0.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#85](https://github.com/tanem/generator-typescript-react-lib/pull/85) Update dependency rollup-plugin-node-resolve to v5.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#84](https://github.com/tanem/generator-typescript-react-lib/pull/84) Update dependency @types/jest to v24.0.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#83](https://github.com/tanem/generator-typescript-react-lib/pull/83) Update dependency rollup to v1.15.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#81](https://github.com/tanem/generator-typescript-react-lib/pull/81) Update dependency rollup to v1.15.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#80](https://github.com/tanem/generator-typescript-react-lib/pull/80) Update dependency rollup to v1.15.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#79](https://github.com/tanem/generator-typescript-react-lib/pull/79) Update dependency @types/react to v16.8.20 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#78](https://github.com/tanem/generator-typescript-react-lib/pull/78) Update dependency typescript to v3.5.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#77](https://github.com/tanem/generator-typescript-react-lib/pull/77) Update dependency rollup to v1.15.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#76](https://github.com/tanem/generator-typescript-react-lib/pull/76) Update dependency rollup-plugin-node-resolve to v5.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#75](https://github.com/tanem/generator-typescript-react-lib/pull/75) Update dependency rollup to v1.15.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#74](https://github.com/tanem/generator-typescript-react-lib/pull/74) Update dependency @types/jest to v24.0.14 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.20](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.20) (2019-06-12)
+## [v1.0.20](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.20) (2019-06-11)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.19...v1.0.20)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency prettier to v1.18.2 [#65](https://github.com/tanem/generator-typescript-react-lib/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency react-scripts to v3 [#57](https://github.com/tanem/generator-typescript-react-lib/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
-- Update react monorepo to v16.8.6 [#56](https://github.com/tanem/generator-typescript-react-lib/pull/56) ([renovate[bot]](https://github.com/apps/renovate))
-- Fix test setup [#73](https://github.com/tanem/generator-typescript-react-lib/pull/73) ([tanem](https://github.com/tanem))
-- Update dependency rollup to v1.15.1 [#72](https://github.com/tanem/generator-typescript-react-lib/pull/72) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.15.0 [#71](https://github.com/tanem/generator-typescript-react-lib/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.6 [#70](https://github.com/tanem/generator-typescript-react-lib/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
-- Update typescript-eslint monorepo to v1.10.2 [#69](https://github.com/tanem/generator-typescript-react-lib/pull/69) ([renovate[bot]](https://github.com/apps/renovate))
-- Update typescript-eslint monorepo to v1.10.1 [#68](https://github.com/tanem/generator-typescript-react-lib/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.5 [#66](https://github.com/tanem/generator-typescript-react-lib/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency shelljs-plugin-authors to v2.0.9 [#67](https://github.com/tanem/generator-typescript-react-lib/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency shelljs-plugin-authors to v2.0.8 [#63](https://github.com/tanem/generator-typescript-react-lib/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.3 [#64](https://github.com/tanem/generator-typescript-react-lib/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.2 [#62](https://github.com/tanem/generator-typescript-react-lib/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.1 [#61](https://github.com/tanem/generator-typescript-react-lib/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.14.0 [#60](https://github.com/tanem/generator-typescript-react-lib/pull/60) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency enzyme to v3.10.0 [#59](https://github.com/tanem/generator-typescript-react-lib/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency enzyme-adapter-react-16 to v1.14.0 [#58](https://github.com/tanem/generator-typescript-react-lib/pull/58) ([renovate[bot]](https://github.com/apps/renovate))
+- [#65](https://github.com/tanem/generator-typescript-react-lib/pull/65) Update dependency prettier to v1.18.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#57](https://github.com/tanem/generator-typescript-react-lib/pull/57) Update dependency react-scripts to v3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#56](https://github.com/tanem/generator-typescript-react-lib/pull/56) Update react monorepo to v16.8.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#73](https://github.com/tanem/generator-typescript-react-lib/pull/73) Fix test setup ([@tanem](https://github.com/tanem))
+- [#72](https://github.com/tanem/generator-typescript-react-lib/pull/72) Update dependency rollup to v1.15.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#71](https://github.com/tanem/generator-typescript-react-lib/pull/71) Update dependency rollup to v1.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#70](https://github.com/tanem/generator-typescript-react-lib/pull/70) Update dependency rollup to v1.14.6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#69](https://github.com/tanem/generator-typescript-react-lib/pull/69) Update typescript-eslint monorepo to v1.10.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#68](https://github.com/tanem/generator-typescript-react-lib/pull/68) Update typescript-eslint monorepo to v1.10.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#66](https://github.com/tanem/generator-typescript-react-lib/pull/66) Update dependency rollup to v1.14.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#67](https://github.com/tanem/generator-typescript-react-lib/pull/67) Update dependency shelljs-plugin-authors to v2.0.9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#63](https://github.com/tanem/generator-typescript-react-lib/pull/63) Update dependency shelljs-plugin-authors to v2.0.8 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#64](https://github.com/tanem/generator-typescript-react-lib/pull/64) Update dependency rollup to v1.14.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#62](https://github.com/tanem/generator-typescript-react-lib/pull/62) Update dependency rollup to v1.14.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#61](https://github.com/tanem/generator-typescript-react-lib/pull/61) Update dependency rollup to v1.14.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#60](https://github.com/tanem/generator-typescript-react-lib/pull/60) Update dependency rollup to v1.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#59](https://github.com/tanem/generator-typescript-react-lib/pull/59) Update dependency enzyme to v3.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#58](https://github.com/tanem/generator-typescript-react-lib/pull/58) Update dependency enzyme-adapter-react-16 to v1.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.19](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.19) (2019-06-04)
+## [v1.0.19](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.19) (2019-06-03)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.18...v1.0.19)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update generator templates [#55](https://github.com/tanem/generator-typescript-react-lib/pull/55) ([tanem](https://github.com/tanem))
+- [#55](https://github.com/tanem/generator-typescript-react-lib/pull/55) Update generator templates ([@tanem](https://github.com/tanem))
 
 ## [v1.0.18](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.18) (2019-06-03)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.17...v1.0.18)
 
-**Merged pull requests:**
+#### :bug: Bug Fix
 
-- Fix a couple glitches noticed during usage [#54](https://github.com/tanem/generator-typescript-react-lib/pull/54) ([tanem](https://github.com/tanem))
+- [#54](https://github.com/tanem/generator-typescript-react-lib/pull/54) Fix a couple glitches noticed during usage ([@tanem](https://github.com/tanem))
 
-## [v1.0.17](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.17) (2019-06-02)
+## [v1.0.17](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.17) (2019-06-01)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.16...v1.0.17)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Add eslint-plugin-react-hooks [#52](https://github.com/tanem/generator-typescript-react-lib/pull/52) ([tanem](https://github.com/tanem))
-- Update dependency rollup to v1.13.1 [#51](https://github.com/tanem/generator-typescript-react-lib/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+- [#52](https://github.com/tanem/generator-typescript-react-lib/pull/52) Add eslint-plugin-react-hooks ([@tanem](https://github.com/tanem))
+- [#51](https://github.com/tanem/generator-typescript-react-lib/pull/51) Update dependency rollup to v1.13.1 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.16](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.16) (2019-06-01)
+## [v1.0.16](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.16) (2019-05-31)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.15...v1.0.16)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update generator renovate conf [#50](https://github.com/tanem/generator-typescript-react-lib/pull/50) ([tanem](https://github.com/tanem))
-- Update dependency rollup-plugin-node-resolve to v5.0.1 [#49](https://github.com/tanem/generator-typescript-react-lib/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency rollup to v1.13.0 [#48](https://github.com/tanem/generator-typescript-react-lib/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
-- Reconfigure Renovate [#47](https://github.com/tanem/generator-typescript-react-lib/pull/47) ([tanem](https://github.com/tanem))
+- [#50](https://github.com/tanem/generator-typescript-react-lib/pull/50) Update generator renovate conf ([@tanem](https://github.com/tanem))
+- [#49](https://github.com/tanem/generator-typescript-react-lib/pull/49) Update dependency rollup-plugin-node-resolve to v5.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#48](https://github.com/tanem/generator-typescript-react-lib/pull/48) Update dependency rollup to v1.13.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#47](https://github.com/tanem/generator-typescript-react-lib/pull/47) Reconfigure Renovate ([@tanem](https://github.com/tanem))
 
-## [v1.0.15](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.15) (2019-05-31)
+## [v1.0.15](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.15) (2019-05-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.14...v1.0.15)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency jest-prettyhtml-matchers to v1.0.16 [#45](https://github.com/tanem/generator-typescript-react-lib/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+- [#45](https://github.com/tanem/generator-typescript-react-lib/pull/45) Update dependency jest-prettyhtml-matchers to v1.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
 
-## [v1.0.14](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.14) (2019-05-31)
+## [v1.0.14](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.14) (2019-05-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.13...v1.0.14)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update dependency del-cli to v2 [#44](https://github.com/tanem/generator-typescript-react-lib/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies [#43](https://github.com/tanem/generator-typescript-react-lib/pull/43) ([renovate[bot]](https://github.com/apps/renovate))
-- Reconfigure Renovate [#42](https://github.com/tanem/generator-typescript-react-lib/pull/42) ([tanem](https://github.com/tanem))
-- Meddling with versions to check renovate conf [#41](https://github.com/tanem/generator-typescript-react-lib/pull/41) ([tanem](https://github.com/tanem))
-- Reconfigure renovate [#40](https://github.com/tanem/generator-typescript-react-lib/pull/40) ([tanem](https://github.com/tanem))
+- [#44](https://github.com/tanem/generator-typescript-react-lib/pull/44) Update dependency del-cli to v2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#43](https://github.com/tanem/generator-typescript-react-lib/pull/43) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#42](https://github.com/tanem/generator-typescript-react-lib/pull/42) Reconfigure Renovate ([@tanem](https://github.com/tanem))
+- [#41](https://github.com/tanem/generator-typescript-react-lib/pull/41) Meddling with versions to check renovate conf ([@tanem](https://github.com/tanem))
+- [#40](https://github.com/tanem/generator-typescript-react-lib/pull/40) Reconfigure renovate ([@tanem](https://github.com/tanem))
 
-## [v1.0.13](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.13) (2019-05-29)
+## [v1.0.13](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.13) (2019-05-28)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.12...v1.0.13)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Fix npm package [#39](https://github.com/tanem/generator-typescript-react-lib/pull/39) ([tanem](https://github.com/tanem))
+- [#39](https://github.com/tanem/generator-typescript-react-lib/pull/39) Fix npm package ([@tanem](https://github.com/tanem))
 
-## [v1.0.12](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.12) (2019-05-29)
+## [v1.0.12](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.12) (2019-05-28)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.11...v1.0.12)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Fix link [#38](https://github.com/tanem/generator-typescript-react-lib/pull/38) ([tanem](https://github.com/tanem))
-- Revert yeoman-generator [#37](https://github.com/tanem/generator-typescript-react-lib/pull/37) ([tanem](https://github.com/tanem))
-- Fix audit issues [#35](https://github.com/tanem/generator-typescript-react-lib/pull/35) ([tanem](https://github.com/tanem))
-- Update dependency prop-types to ^15.7.2 [#32](https://github.com/tanem/generator-typescript-react-lib/pull/32) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency @babel/runtime to ^7.4.5 [#31](https://github.com/tanem/generator-typescript-react-lib/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dev dependencies (major) [#27](https://github.com/tanem/generator-typescript-react-lib/pull/27) ([renovate[bot]](https://github.com/apps/renovate))
-- Fix test script [#34](https://github.com/tanem/generator-typescript-react-lib/pull/34) ([tanem](https://github.com/tanem))
-- Update dev dependencies [#25](https://github.com/tanem/generator-typescript-react-lib/pull/25) ([renovate[bot]](https://github.com/apps/renovate))
-- Use asymmetric matchers for dep versions [#33](https://github.com/tanem/generator-typescript-react-lib/pull/33) ([tanem](https://github.com/tanem))
-- Pin dependencies [#29](https://github.com/tanem/generator-typescript-react-lib/pull/29) ([renovate[bot]](https://github.com/apps/renovate))
-- Update templates with latest preferences [#21](https://github.com/tanem/generator-typescript-react-lib/pull/21) ([tanem](https://github.com/tanem))
-- Update dependency yeoman-generator to v4 [#26](https://github.com/tanem/generator-typescript-react-lib/pull/26) ([renovate[bot]](https://github.com/apps/renovate))
-- Rename template [#30](https://github.com/tanem/generator-typescript-react-lib/pull/30) ([tanem](https://github.com/tanem))
-- Reconfigure renovate [#28](https://github.com/tanem/generator-typescript-react-lib/pull/28) ([tanem](https://github.com/tanem))
-- Update dependency yeoman-generator to ^3.2.0 [#24](https://github.com/tanem/generator-typescript-react-lib/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency glob to ^7.1.4 [#23](https://github.com/tanem/generator-typescript-react-lib/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
-- Update dependency chalk to ^2.4.2 [#22](https://github.com/tanem/generator-typescript-react-lib/pull/22) ([renovate[bot]](https://github.com/apps/renovate))
-- Add renovate config [#20](https://github.com/tanem/generator-typescript-react-lib/pull/20) ([tanem](https://github.com/tanem))
+- [#38](https://github.com/tanem/generator-typescript-react-lib/pull/38) Fix link ([@tanem](https://github.com/tanem))
+- [#37](https://github.com/tanem/generator-typescript-react-lib/pull/37) Revert yeoman-generator ([@tanem](https://github.com/tanem))
+- [#35](https://github.com/tanem/generator-typescript-react-lib/pull/35) Fix audit issues ([@tanem](https://github.com/tanem))
+- [#32](https://github.com/tanem/generator-typescript-react-lib/pull/32) Update dependency prop-types to ^15.7.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#31](https://github.com/tanem/generator-typescript-react-lib/pull/31) Update dependency @babel/runtime to ^7.4.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#27](https://github.com/tanem/generator-typescript-react-lib/pull/27) Update dev dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+- [#34](https://github.com/tanem/generator-typescript-react-lib/pull/34) Fix test script ([@tanem](https://github.com/tanem))
+- [#25](https://github.com/tanem/generator-typescript-react-lib/pull/25) Update dev dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#33](https://github.com/tanem/generator-typescript-react-lib/pull/33) Use asymmetric matchers for dep versions ([@tanem](https://github.com/tanem))
+- [#29](https://github.com/tanem/generator-typescript-react-lib/pull/29) Pin dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+- [#21](https://github.com/tanem/generator-typescript-react-lib/pull/21) Update templates with latest preferences ([@tanem](https://github.com/tanem))
+- [#26](https://github.com/tanem/generator-typescript-react-lib/pull/26) Update dependency yeoman-generator to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#30](https://github.com/tanem/generator-typescript-react-lib/pull/30) Rename template ([@tanem](https://github.com/tanem))
+- [#28](https://github.com/tanem/generator-typescript-react-lib/pull/28) Reconfigure renovate ([@tanem](https://github.com/tanem))
+- [#24](https://github.com/tanem/generator-typescript-react-lib/pull/24) Update dependency yeoman-generator to ^3.2.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#23](https://github.com/tanem/generator-typescript-react-lib/pull/23) Update dependency glob to ^7.1.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#22](https://github.com/tanem/generator-typescript-react-lib/pull/22) Update dependency chalk to ^2.4.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#20](https://github.com/tanem/generator-typescript-react-lib/pull/20) Add renovate config ([@tanem](https://github.com/tanem))
 
 ## [v1.0.11](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.11) (2018-10-15)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.10...v1.0.11)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Fix rollup conf (#18) [#19](https://github.com/tanem/generator-typescript-react-lib/pull/19) ([tanem](https://github.com/tanem))
+- [#19](https://github.com/tanem/generator-typescript-react-lib/pull/19) Fix rollup conf (#18) ([@tanem](https://github.com/tanem))
 
 ## [v1.0.10](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.10) (2018-10-04)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.9...v1.0.10)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Updating dependencies [#17](https://github.com/tanem/generator-typescript-react-lib/pull/17) ([CaringIsCreepy](https://github.com/CaringIsCreepy))
+- [#17](https://github.com/tanem/generator-typescript-react-lib/pull/17) Updating dependencies ([@CaringIsCreepy](https://github.com/CaringIsCreepy))
 
-## [v1.0.9](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.9) (2018-09-18)
+## [v1.0.9](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.9) (2018-09-17)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.8...v1.0.9)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Add update deps script [#15](https://github.com/tanem/generator-typescript-react-lib/pull/15) ([tanem](https://github.com/tanem))
+- [#15](https://github.com/tanem/generator-typescript-react-lib/pull/15) Add update deps script ([@tanem](https://github.com/tanem))
 
-## [v1.0.8](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.8) (2018-09-10)
+## [v1.0.8](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.8) (2018-09-09)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.7...v1.0.8)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update deps [#14](https://github.com/tanem/generator-typescript-react-lib/pull/14) ([tanem](https://github.com/tanem))
+- [#14](https://github.com/tanem/generator-typescript-react-lib/pull/14) Update deps ([@tanem](https://github.com/tanem))
 
-## [v1.0.7](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.7) (2018-09-07)
+## [v1.0.7](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.7) (2018-09-06)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.6...v1.0.7)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update deps [#13](https://github.com/tanem/generator-typescript-react-lib/pull/13) ([tanem](https://github.com/tanem))
+- [#13](https://github.com/tanem/generator-typescript-react-lib/pull/13) Update deps ([@tanem](https://github.com/tanem))
 
-## [v1.0.6](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.6) (2018-09-05)
+## [v1.0.6](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.6) (2018-09-04)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.5...v1.0.6)
 
-**Merged pull requests:**
+#### :memo: Documentation
 
-- Update docs [#12](https://github.com/tanem/generator-typescript-react-lib/pull/12) ([tanem](https://github.com/tanem))
+- [#12](https://github.com/tanem/generator-typescript-react-lib/pull/12) Update docs ([@tanem](https://github.com/tanem))
 
 ## [v1.0.5](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.5) (2018-09-04)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.4...v1.0.5)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Use shelljs-plugin-authors [#11](https://github.com/tanem/generator-typescript-react-lib/pull/11) ([tanem](https://github.com/tanem))
-- Add changelog generation scripts [#10](https://github.com/tanem/generator-typescript-react-lib/pull/10) ([tanem](https://github.com/tanem))
-- Use shelljs-authors and update deps [#9](https://github.com/tanem/generator-typescript-react-lib/pull/9) ([tanem](https://github.com/tanem))
+- [#11](https://github.com/tanem/generator-typescript-react-lib/pull/11) Use shelljs-plugin-authors ([@tanem](https://github.com/tanem))
+- [#10](https://github.com/tanem/generator-typescript-react-lib/pull/10) Add changelog generation scripts ([@tanem](https://github.com/tanem))
+- [#9](https://github.com/tanem/generator-typescript-react-lib/pull/9) Use shelljs-authors and update deps ([@tanem](https://github.com/tanem))
 
 ## [v1.0.4](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.4) (2018-08-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.3...v1.0.4)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update deps [#8](https://github.com/tanem/generator-typescript-react-lib/pull/8) ([tanem](https://github.com/tanem))
+- [#8](https://github.com/tanem/generator-typescript-react-lib/pull/8) Update deps ([@tanem](https://github.com/tanem))
 
-## [v1.0.3](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.3) (2018-08-12)
+## [v1.0.3](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.3) (2018-08-11)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.2...v1.0.3)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Update deps [#7](https://github.com/tanem/generator-typescript-react-lib/pull/7) ([tanem](https://github.com/tanem))
+- [#7](https://github.com/tanem/generator-typescript-react-lib/pull/7) Update deps ([@tanem](https://github.com/tanem))
 
-## [v1.0.2](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.2) (2018-08-10)
+## [v1.0.2](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.2) (2018-08-09)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.1...v1.0.2)
 
-**Merged pull requests:**
+#### :memo: Documentation
 
-- Add travis reminder [#6](https://github.com/tanem/generator-typescript-react-lib/pull/6) ([tanem](https://github.com/tanem))
-- Update docs [#5](https://github.com/tanem/generator-typescript-react-lib/pull/5) ([tanem](https://github.com/tanem))
+- [#5](https://github.com/tanem/generator-typescript-react-lib/pull/5) Update docs ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#6](https://github.com/tanem/generator-typescript-react-lib/pull/6) Add travis reminder ([@tanem](https://github.com/tanem))
 
 ## [v1.0.1](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.1) (2018-08-08)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.0...v1.0.1)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Tidy up [#4](https://github.com/tanem/generator-typescript-react-lib/pull/4) ([tanem](https://github.com/tanem))
+- [#4](https://github.com/tanem/generator-typescript-react-lib/pull/4) Tidy up ([@tanem](https://github.com/tanem))
 
-## [v1.0.0](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.0) (2018-08-08)
+## [v1.0.0](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.0) (2018-08-07)
 
-**Merged pull requests:**
+#### :house: Internal
 
-- Housekeeping [#3](https://github.com/tanem/generator-typescript-react-lib/pull/3) ([tanem](https://github.com/tanem))
-- Fix template names [#2](https://github.com/tanem/generator-typescript-react-lib/pull/2) ([tanem](https://github.com/tanem))
-- Add npm run scripts [#1](https://github.com/tanem/generator-typescript-react-lib/pull/1) ([tanem](https://github.com/tanem))
+- [#3](https://github.com/tanem/generator-typescript-react-lib/pull/3) Housekeeping ([@tanem](https://github.com/tanem))
+- [#2](https://github.com/tanem/generator-typescript-react-lib/pull/2) Fix template names ([@tanem](https://github.com/tanem))
+- [#1](https://github.com/tanem/generator-typescript-react-lib/pull/1) Add npm run scripts ([@tanem](https://github.com/tanem))
