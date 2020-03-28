@@ -15,10 +15,10 @@ const UMD_PROD = 'UMD_PROD'
 
 const input = './compiled/index.js'
 
-const getGlobals = bundleType => {
+const getGlobals = (bundleType) => {
   const baseGlobals = {
     'react-dom': 'ReactDOM',
-    react: 'React'
+    react: 'React',
   }
 
   switch (bundleType) {
@@ -31,17 +31,17 @@ const getGlobals = bundleType => {
   }
 }
 
-const getExternal = bundleType => {
+const getExternal = (bundleType) => {
   const peerDependencies = Object.keys(pkg.peerDependencies)
   const dependencies = Object.keys(pkg.dependencies)
 
   // Hat-tip: https://github.com/rollup/rollup-plugin-babel/issues/148#issuecomment-399696316.
-  const makeExternalPredicate = externals => {
+  const makeExternalPredicate = (externals) => {
     if (externals.length === 0) {
       return () => false
     }
     const pattern = new RegExp(`^(${externals.join('|')})($|/)`)
-    return id => pattern.test(id)
+    return (id) => pattern.test(id)
   }
 
   switch (bundleType) {
@@ -56,16 +56,16 @@ const getExternal = bundleType => {
   }
 }
 
-const isProduction = bundleType =>
+const isProduction = (bundleType) =>
   bundleType === CJS_PROD || bundleType === UMD_PROD
 
-const getBabelConfig = bundleType => {
+const getBabelConfig = (bundleType) => {
   const options = {
     babelrc: false,
     exclude: 'node_modules/**',
     presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
     plugins: ['@babel/transform-runtime'],
-    runtimeHelpers: true
+    runtimeHelpers: true,
   }
 
   switch (bundleType) {
@@ -74,8 +74,8 @@ const getBabelConfig = bundleType => {
         ...options,
         plugins: [
           ...options.plugins,
-          ['transform-react-remove-prop-types', { mode: 'wrap' }]
-        ]
+          ['transform-react-remove-prop-types', { mode: 'wrap' }],
+        ],
       }
     case UMD_PROD:
     case CJS_PROD:
@@ -83,15 +83,15 @@ const getBabelConfig = bundleType => {
         ...options,
         plugins: [
           ...options.plugins,
-          ['transform-react-remove-prop-types', { removeImport: true }]
-        ]
+          ['transform-react-remove-prop-types', { removeImport: true }],
+        ],
       }
     default:
       return options
   }
 }
 
-const getPlugins = bundleType => [
+const getPlugins = (bundleType) => [
   nodeResolve(),
   commonjs({
     include: 'node_modules/**',
@@ -113,15 +113,15 @@ const getPlugins = bundleType => [
         'oneOfType',
         'shape',
         'string',
-        'symbol'
-      ]
-    }
+        'symbol',
+      ],
+    },
   }),
   babel(getBabelConfig(bundleType)),
   replace({
     'process.env.NODE_ENV': JSON.stringify(
       isProduction(bundleType) ? 'production' : 'development'
-    )
+    ),
   }),
   sourcemaps(),
   sizeSnapshot(),
@@ -131,15 +131,15 @@ const getPlugins = bundleType => [
       output: { comments: false },
       compress: {
         keep_infinity: true, // eslint-disable-line @typescript-eslint/camelcase
-        pure_getters: true // eslint-disable-line @typescript-eslint/camelcase
+        pure_getters: true, // eslint-disable-line @typescript-eslint/camelcase
       },
       warnings: true,
       ecma: 5,
-      toplevel: false
-    })
+      toplevel: false,
+    }),
 ]
 
-const getCjsConfig = bundleType => ({
+const getCjsConfig = (bundleType) => ({
   input,
   external: getExternal(bundleType),
   output: {
@@ -147,9 +147,9 @@ const getCjsConfig = bundleType => ({
       isProduction(bundleType) ? 'production' : 'development'
     }.js`,
     format: 'cjs',
-    sourcemap: true
+    sourcemap: true,
   },
-  plugins: getPlugins(bundleType)
+  plugins: getPlugins(bundleType),
 })
 
 const getEsConfig = () => ({
@@ -158,12 +158,12 @@ const getEsConfig = () => ({
   output: {
     file: pkg.module,
     format: 'es',
-    sourcemap: true
+    sourcemap: true,
   },
-  plugins: getPlugins(ES)
+  plugins: getPlugins(ES),
 })
 
-const getUmdConfig = bundleType => ({
+const getUmdConfig = (bundleType) => ({
   input,
   external: getExternal(bundleType),
   output: {
@@ -173,9 +173,9 @@ const getUmdConfig = bundleType => ({
     format: 'umd',
     globals: getGlobals(bundleType),
     name: '<%= umdGlobalName %>',
-    sourcemap: true
+    sourcemap: true,
   },
-  plugins: getPlugins(bundleType)
+  plugins: getPlugins(bundleType),
 })
 
 export default [
@@ -183,5 +183,5 @@ export default [
   getCjsConfig(CJS_PROD),
   getEsConfig(),
   getUmdConfig(UMD_DEV),
-  getUmdConfig(UMD_PROD)
+  getUmdConfig(UMD_PROD),
 ]

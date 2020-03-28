@@ -6,5 +6,5 @@ module.exports = new Map([
   ['nvmrc', '.nvmrc'],
   ['prettierignore', '.prettierignore'],
   ['prettierrc.json', '.prettierrc.json'],
-  ['travis.yml', '.travis.yml']
+  ['travis.yml', '.travis.yml'],
 ])

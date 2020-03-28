@@ -11,11 +11,11 @@ const getFiles = () =>
     .sync('**', {
       cwd: path.join(process.cwd(), 'generators/app/templates'),
       dot: true,
-      nodir: true
+      nodir: true,
     })
-    .map(file => (templateMap.has(file) ? templateMap.get(file) : file))
+    .map((file) => (templateMap.has(file) ? templateMap.get(file) : file))
 
-const readFile = file => {
+const readFile = (file) => {
   const data = fs.readFileSync(file, 'utf-8')
   return path.extname(file) === '.json' ? JSON.parse(data) : data
 }
@@ -25,7 +25,7 @@ const nameMock = jest.fn().mockResolvedValue('Mock Name')
 const usernameMock = jest.fn().mockResolvedValue('mockusername')
 const packageName = 'test-package'
 
-beforeAll(done => {
+beforeAll((done) => {
   helpers
     .run(path.join(__dirname, '../generators/app'))
     .withPrompts({
@@ -33,9 +33,9 @@ beforeAll(done => {
       packageDescription: 'Test package.',
       packageName,
       umdGlobalName: 'TestPkg',
-      username: 'jsmith'
+      username: 'jsmith',
     })
-    .on('ready', generator => {
+    .on('ready', (generator) => {
       generator.user.github.username = usernameMock
       generator.user.git.name = nameMock
       generator.user.git.email = emailMock
@@ -43,11 +43,11 @@ beforeAll(done => {
     .on('end', done)
 })
 
-test.each(getFiles())('creates %s', file => {
+test.each(getFiles())('creates %s', (file) => {
   if (path.basename(file) === 'package.json') {
     const data = readFile(file)
     const { dependencies, devDependencies, peerDependencies } = data
-    const setAsymmetricMatchers = object => {
+    const setAsymmetricMatchers = (object) => {
       for (const key in object) {
         if (key !== packageName) {
           object[key] = expect.any(String)
@@ -64,7 +64,7 @@ test.each(getFiles())('creates %s', file => {
         : {}),
       ...(peerDependencies
         ? { peerDependencies: setAsymmetricMatchers(peerDependencies) }
-        : {})
+        : {}),
     })
   } else {
     expect(readFile(file)).toMatchSnapshot()
