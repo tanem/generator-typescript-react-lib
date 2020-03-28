@@ -19,30 +19,30 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'packageName',
         message: 'Package name:',
-        default: defaultPackageName
+        default: defaultPackageName,
       },
       {
         type: 'input',
         name: 'packageDescription',
-        message: 'Package description:'
+        message: 'Package description:',
       },
       {
         type: 'input',
         name: 'author',
         message: 'Author:',
-        default: defaultAuthor
+        default: defaultAuthor,
       },
       {
         type: 'input',
         name: 'username',
         message: 'Username:',
-        default: defaultUsername
+        default: defaultUsername,
       },
       {
         type: 'input',
         name: 'umdGlobalName',
-        message: 'UMD global variable name:'
-      }
+        message: 'UMD global variable name:',
+      },
     ]
 
     this.props = await this.prompt(prompts)
@@ -58,9 +58,9 @@ module.exports = class extends Generator {
       .sync('**', {
         cwd: this.sourceRoot(),
         dot: true,
-        nodir: true
+        nodir: true,
       })
-      .forEach(template => {
+      .forEach((template) => {
         this.fs.copyTpl(
           this.templatePath(template),
           this.destinationPath(
@@ -77,7 +77,7 @@ module.exports = class extends Generator {
 
   end() {
     this.spawnCommandSync('git', ['init', '--quiet'], {
-      cwd: this.destinationPath()
+      cwd: this.destinationPath(),
     })
 
     this.spawnCommandSync(
@@ -86,10 +86,10 @@ module.exports = class extends Generator {
         'remote',
         'add',
         'origin',
-        `git@github.com:${this.props.username}/${this.props.packageName}.git`
+        `git@github.com:${this.props.username}/${this.props.packageName}.git`,
       ],
       {
-        cwd: this.destinationPath()
+        cwd: this.destinationPath(),
       }
     )
 

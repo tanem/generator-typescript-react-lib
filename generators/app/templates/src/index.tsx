@@ -8,7 +8,7 @@ interface Props {
 const C: React.SFC<Props> = ({ text }) => <p>{text}</p>
 
 C.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 }
 
 export default C
