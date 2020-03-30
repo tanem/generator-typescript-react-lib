@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.41](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.41) (2020-03-30)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.40...v1.0.41)
+
+#### :house: Internal
+
+- [#186](https://github.com/tanem/generator-typescript-react-lib/pull/186) Update dependency prettier to v2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#185](https://github.com/tanem/generator-typescript-react-lib/pull/185) Update dependency tanem-scripts to v5.0.16 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#187](https://github.com/tanem/generator-typescript-react-lib/pull/187) Use codecov bash uploader ([@tanem](https://github.com/tanem))
+
 ## [v1.0.40](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.40) (2020-03-21)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.39...v1.0.40)
 
