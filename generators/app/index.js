@@ -3,6 +3,7 @@ const chalk = require('chalk')
 const glob = require('glob')
 const path = require('path')
 const templateMap = require('./template-map')
+const { capitalize, removeWhiteSpace, toCamelCase } = require('./utils')
 
 module.exports = class extends Generator {
   async prompting() {
@@ -13,6 +14,9 @@ module.exports = class extends Generator {
     const defaultAuthor = `${gitName} <${gitEmail}>`
 
     const defaultPackageName = path.basename(this.destinationRoot())
+    const defaultUmdGlobalName = capitalize(
+      toCamelCase(removeWhiteSpace(defaultPackageName))
+    )
 
     const prompts = [
       {
@@ -42,6 +46,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'umdGlobalName',
         message: 'UMD global variable name:',
+        default: defaultUmdGlobalName,
       },
     ]
 
