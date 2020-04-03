@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const glob = require('glob')
 const path = require('path')
 const templateMap = require('./template-map')
-const { capitalize, removeWhiteSpace, toCamelCase } = require('./utils')
+const { join, map, pipe, upperFirst, words } = require("lodash/fp");
 
 module.exports = class extends Generator {
   async prompting() {
@@ -14,9 +14,12 @@ module.exports = class extends Generator {
     const defaultAuthor = `${gitName} <${gitEmail}>`
 
     const defaultPackageName = path.basename(this.destinationRoot())
-    const defaultUmdGlobalName = capitalize(
-      toCamelCase(removeWhiteSpace(defaultPackageName))
-    )
+    const convertToVariableName = pipe(
+      words,
+      map(upperFirst),
+      join('')
+    );
+    const defaultUmdGlobalName = convertToVariableName(defaultPackageName)
 
     const prompts = [
       {
