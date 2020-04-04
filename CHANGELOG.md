@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.0.42](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.42) (2020-04-04)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.41...v1.0.42)
+
+#### :bug: Bug Fix
+
+- [#190](https://github.com/tanem/generator-typescript-react-lib/pull/190) Add default to umdGlobalName prompt ([@TjaartBroodryk](https://github.com/TjaartBroodryk))
+
+#### :house: Internal
+
+- [#191](https://github.com/tanem/generator-typescript-react-lib/pull/191) Update dependency tanem-scripts to v5.0.17 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#188](https://github.com/tanem/generator-typescript-react-lib/pull/188) Update dependency jest to v25.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.41](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.41) (2020-03-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.40...v1.0.41)
 
