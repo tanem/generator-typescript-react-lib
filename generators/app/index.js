@@ -14,8 +14,8 @@ module.exports = class extends Generator {
     const defaultAuthor = `${gitName} <${gitEmail}>`
 
     const defaultPackageName = path.basename(this.destinationRoot())
-    const convertToVariableName = pipe(words, map(upperFirst), join(''))
-    const defaultUmdGlobalName = convertToVariableName(defaultPackageName)
+    const convertToUmdGlobalName = pipe(words, map(upperFirst), join(''))
+    const defaultUmdGlobalName = convertToUmdGlobalName(defaultPackageName)
 
     const prompts = [
       {
