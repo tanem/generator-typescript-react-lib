@@ -24,7 +24,7 @@
     "yeoman-test": "2.3.0"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "glob": "^7.1.6",
     "lodash": "^4.17.15",
     "yeoman-generator": "^3.2.0"
