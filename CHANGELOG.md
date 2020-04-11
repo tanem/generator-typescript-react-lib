@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.44](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.44) (2020-04-11)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.43...v1.0.44)
+
+#### :house: Internal
+
+- [#197](https://github.com/tanem/generator-typescript-react-lib/pull/197) Tidy AUTHORS ([@tanem](https://github.com/tanem))
+
 ## [v1.0.43](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.43) (2020-04-11)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.42...v1.0.43)
 
