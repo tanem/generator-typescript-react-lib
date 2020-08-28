@@ -1,6 +1,6 @@
 {
   "name": "generator-typescript-react-lib",
-  "version": "1.0.61",
+  "version": "1.0.62",
   "description": "A Yeoman generator for React libs written with Typescript.",
   "homepage": "https://github.com/tanem/generator-typescript-react-lib",
   "bugs": "https://github.com/tanem/generator-typescript-react-lib/issues",
