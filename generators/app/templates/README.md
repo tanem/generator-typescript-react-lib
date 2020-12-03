@@ -1,7 +1,7 @@
 # <%= packageName %>
 
 [![npm version][npmv-image]][npmv-url]
-[![build status][travis-image]][travis-url]
+[![build status][build-image]][build-url]
 [![coverage status][codecov-image]][codecov-url]
 [![npm downloads][npmd-image]][npmd-url]
 
@@ -33,6 +33,7 @@ render(, document.getElementById('root'))
 **Example**
 
 ```jsx
+
 ```
 
 ## Installation
@@ -61,8 +62,8 @@ For the minified production version, make sure you have already included:
 
 MIT
 
-[travis-image]: https://img.shields.io/travis/<%= username %>/<%= packageName %>/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/<%= username %>/<%= packageName %>
+[build-image]: https://img.shields.io/github/workflow/status/<%= username %>/<%= packageName %>/CI?style=flat-square
+[build-url]: https://github.com/<%= username %>/<%= packageName %>/actions?query=workflow%3ACI
 [codecov-image]: https://img.shields.io/codecov/c/github/<%= username %>/<%= packageName %>.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/<%= username %>/<%= packageName %>
 [npmv-image]: https://img.shields.io/npm/v/<%= packageName %>.svg?style=flat-square
