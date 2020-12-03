@@ -48,6 +48,29 @@ exports[`creates .eslintrc.js 1`] = `
 "
 `;
 
+exports[`creates .github/workflows/ci.yml 1`] = `
+"name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - run: npm ci
+      - run: npm test
+      - run: bash <(curl -s https://codecov.io/bash)
+"
+`;
+
 exports[`creates .gitignore 1`] = `
 "*.log
 .DS_Store
@@ -70,18 +93,6 @@ Object {
   "semi": false,
   "singleQuote": true,
 }
-`;
-
-exports[`creates .travis.yml 1`] = `
-"language: node_js
-notifications:
-  email: false
-if: type = pull_request
-script:
-  - npm t
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-"
 `;
 
 exports[`creates LICENSE 1`] = `
@@ -113,7 +124,7 @@ exports[`creates README.md 1`] = `
 "# test-package
 
 [![npm version][npmv-image]][npmv-url]
-[![build status][travis-image]][travis-url]
+[![build status][build-image]][build-url]
 [![coverage status][codecov-image]][codecov-url]
 [![npm downloads][npmd-image]][npmd-url]
 
@@ -145,6 +156,7 @@ render(, document.getElementById('root'))
 **Example**
 
 \`\`\`jsx
+
 \`\`\`
 
 ## Installation
@@ -173,8 +185,8 @@ For the minified production version, make sure you have already included:
 
 MIT
 
-[travis-image]: https://img.shields.io/travis/jsmith/test-package/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/jsmith/test-package
+[build-image]: https://img.shields.io/github/workflow/status/jsmith/test-package/CI?style=flat-square
+[build-url]: https://github.com/jsmith/test-package/actions?query=workflow%3ACI
 [codecov-image]: https://img.shields.io/codecov/c/github/jsmith/test-package.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/jsmith/test-package
 [npmv-image]: https://img.shields.io/npm/v/test-package.svg?style=flat-square

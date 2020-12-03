@@ -1,7 +1,7 @@
 # generator-typescript-react-lib
 
 [![npm version][npmv-image]][npmv-url]
-[![build status][travis-image]][travis-url]
+[![build status][build-image]][build-url]
 [![coverage status][codecov-image]][codecov-url]
 [![npm downloads][npmd-image]][npmd-url]
 
@@ -11,7 +11,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [Background](#background)
 - [Features](#features)
@@ -35,7 +34,7 @@ To provide a basic starting point when authoring React libraries with Typescript
 - Tests bundles via [Jest](https://jestjs.io/).
 - Generates Typescript type declarations for publishing.
 - Outputs, strips, or wraps [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) declarations according to bundle type.
-- Configures continuous integration via [Travis](https://travis-ci.org/).
+- Configures continuous integration via [GitHub Actions](https://github.com/features/actions).
 - Configures code coverage analysis via [Codecov](https://codecov.io/).
 - Configures [Renovate](https://renovatebot.com/) for dependency management.
 - Adds scripts for releasing to [npm](https://www.npmjs.com/).
@@ -63,8 +62,7 @@ $ yo typescript-react-lib
 
 1. Create a new GitHub repository.
 2. [Install/enable](https://renovatebot.com/docs/install-github-app/) the Renovate GitHub app.
-3. [Integrate](https://travis-ci.org/account/repositories) Travis CI.
-4. Use this generator to create your lib.
+3. Use this generator to create your lib.
 
 ### Development
 
@@ -80,9 +78,7 @@ It's also recommended to set branch protection rules against the `master` branch
 
 - `Require status checks to pass before merging`.
 - `Require branches to be up to date before merging`.
-- `codecov/patch`.
-- `codecov/project`.
-- `continuous-integration/travis-ci`.
+- `ci`.
 
 ### Testing
 
@@ -116,8 +112,8 @@ The `release` script will:
 
 MIT
 
-[travis-image]: https://img.shields.io/travis/tanem/generator-typescript-react-lib/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/tanem/generator-typescript-react-lib
+[build-image]: https://img.shields.io/github/workflow/status/tanem/generator-typescript-react-lib/CI?style=flat-square
+[build-url]: https://github.com/tanem/generator-typescript-react-lib/actions?query=workflow%3ACI
 [codecov-image]: https://img.shields.io/codecov/c/github/tanem/generator-typescript-react-lib.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/tanem/generator-typescript-react-lib
 [npmv-image]: https://img.shields.io/npm/v/generator-typescript-react-lib.svg?style=flat-square

@@ -96,10 +96,5 @@ module.exports = class extends Generator {
         cwd: this.destinationPath(),
       }
     )
-
-    const travisUrl = chalk.cyan(
-      `https://travis-ci.org/profile/${this.props.username}`
-    )
-    this.log(`- Enable Travis integration at ${travisUrl}`)
   }
 }
