@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.72](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.72) (2020-12-04)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.71...v1.0.72)
+
+#### :house: Internal
+
+- [#250](https://github.com/tanem/generator-typescript-react-lib/pull/250) Switch from travis to gh actions ([@tanem](https://github.com/tanem))
+- [#247](https://github.com/tanem/generator-typescript-react-lib/pull/247) Update dependency prettier to v2.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#249](https://github.com/tanem/generator-typescript-react-lib/pull/249) Update dependency tanem-scripts to v6.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.71](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.71) (2020-11-27)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.70...v1.0.71)
 
