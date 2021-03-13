@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.80](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.80) (2021-03-13)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.79...v1.0.80)
+
+#### :house: Internal
+
+- [#267](https://github.com/tanem/generator-typescript-react-lib/pull/267) Update dependency yeoman-test to v5.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#266](https://github.com/tanem/generator-typescript-react-lib/pull/266) Update dependency tanem-scripts to v6.0.10 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.79](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.79) (2021-03-02)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.78...v1.0.79)
 
