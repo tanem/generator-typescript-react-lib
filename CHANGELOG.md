@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.87](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.87) (2021-05-14)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.86...v1.0.87)
+
+#### :house: Internal
+
+- [#281](https://github.com/tanem/generator-typescript-react-lib/pull/281) Update dependency prettier to v2.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#280](https://github.com/tanem/generator-typescript-react-lib/pull/280) Update dependency glob to ^7.1.7 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.86](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.86) (2021-05-07)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.85...v1.0.86)
 
