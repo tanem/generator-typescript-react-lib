@@ -1,5 +1,21 @@
 # Changelog
 
+## [v1.0.89](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.89) (2021-06-13)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.88...v1.0.89)
+
+#### :house: Internal
+
+- [#294](https://github.com/tanem/generator-typescript-react-lib/pull/294) Update dependency doctoc to v2.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#293](https://github.com/tanem/generator-typescript-react-lib/pull/293) Update dependency prettier to v2.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#292](https://github.com/tanem/generator-typescript-react-lib/pull/292) Update dependency jest to v27.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#291](https://github.com/tanem/generator-typescript-react-lib/pull/291) Update dependency jest to v27.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#290](https://github.com/tanem/generator-typescript-react-lib/pull/290) Update dependency mem-fs to ^2.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#289](https://github.com/tanem/generator-typescript-react-lib/pull/289) Update dependency jest to v27 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#288](https://github.com/tanem/generator-typescript-react-lib/pull/288) Update dependency yeoman-generator to ^5.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#287](https://github.com/tanem/generator-typescript-react-lib/pull/287) Update dependency yeoman-environment to ^3.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#286](https://github.com/tanem/generator-typescript-react-lib/pull/286) Update dependency tanem-scripts to v6.0.18 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#285](https://github.com/tanem/generator-typescript-react-lib/pull/285) Update dependency mem-fs-editor to ^9.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.88](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.88) (2021-05-22)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.87...v1.0.88)
 
