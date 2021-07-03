@@ -21,7 +21,7 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.3.2",
     "tanem-scripts": "6.0.21",
-    "yeoman-test": "6.1.0"
+    "yeoman-test": "6.2.0"
   },
   "dependencies": {
     "chalk": "^4.1.1",
