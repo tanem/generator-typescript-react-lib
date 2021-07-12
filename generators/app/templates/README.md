@@ -62,10 +62,10 @@ For the minified production version, make sure you have already included:
 
 MIT
 
-[build-image]: https://img.shields.io/github/workflow/status/<%= username %>/<%= packageName %>/CI?style=flat-square
-[build-url]: https://github.com/<%= username %>/<%= packageName %>/actions?query=workflow%3ACI
-[codecov-image]: https://img.shields.io/codecov/c/github/<%= username %>/<%= packageName %>.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/<%= username %>/<%= packageName %>
+[build-image]: https://img.shields.io/github/workflow/status/<%= githubUsername %>/<%= packageName %>/CI?style=flat-square
+[build-url]: https://github.com/<%= githubUsername %>/<%= packageName %>/actions?query=workflow%3ACI
+[codecov-image]: https://img.shields.io/codecov/c/github/<%= githubUsername %>/<%= packageName %>.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/<%= githubUsername %>/<%= packageName %>
 [npmv-image]: https://img.shields.io/npm/v/<%= packageName %>.svg?style=flat-square
 [npmv-url]: https://www.npmjs.com/package/<%= packageName %>
 [npmd-image]: https://img.shields.io/npm/dm/<%= packageName %>.svg?style=flat-square

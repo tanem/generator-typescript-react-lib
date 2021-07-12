@@ -7,7 +7,10 @@ const { join, map, pipe, upperFirst, words } = require('lodash/fp')
 
 module.exports = class extends Generator {
   async prompting() {
-    const defaultUsername = await this.user.github.username()
+    let githubUsername
+    try {
+      githubUsername = await this.user.github.username()
+    } catch (e) {}
 
     const gitName = await this.user.git.name()
     const gitEmail = await this.user.git.email()
@@ -37,9 +40,9 @@ module.exports = class extends Generator {
       },
       {
         type: 'input',
-        name: 'username',
-        message: 'Username:',
-        default: defaultUsername,
+        name: 'githubUsername',
+        message: 'GitHub username:',
+        default: githubUsername,
       },
       {
         type: 'input',
@@ -53,10 +56,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    // prettier-ignore
-    this.props.repoURL = `github:${this.props.username}/${
-      this.props.packageName
-    }`
+    this.props.repoURL = `github:${this.props.githubUsername}/${this.props.packageName}`
 
     glob
       .sync('**', {
@@ -90,7 +90,7 @@ module.exports = class extends Generator {
         'remote',
         'add',
         'origin',
-        `git@github.com:${this.props.username}/${this.props.packageName}.git`,
+        `git@github.com:${this.props.githubUsername}/${this.props.packageName}.git`,
       ],
       {
         cwd: this.destinationPath(),
