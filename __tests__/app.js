@@ -22,7 +22,7 @@ const readFile = (file) => {
 
 const emailMock = jest.fn().mockResolvedValue('mock.user@mock.com')
 const nameMock = jest.fn().mockResolvedValue('Mock Name')
-const usernameMock = jest.fn().mockResolvedValue('mockusername')
+const githubUsernameMock = jest.fn().mockResolvedValue('mockgithubusername')
 const packageName = 'test-package'
 
 beforeAll((done) => {
@@ -33,10 +33,10 @@ beforeAll((done) => {
       packageDescription: 'Test package.',
       packageName,
       umdGlobalName: 'TestPkg',
-      username: 'jsmith',
+      githubUsername: 'jsmith',
     })
     .on('ready', (generator) => {
-      generator.user.github.username = usernameMock
+      generator.user.github.githubUsername = githubUsernameMock
       generator.user.git.name = nameMock
       generator.user.git.email = emailMock
     })
