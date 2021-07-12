@@ -1,5 +1,4 @@
 const Generator = require('yeoman-generator')
-const chalk = require('chalk')
 const glob = require('glob')
 const path = require('path')
 const templateMap = require('./template-map')

@@ -24,7 +24,6 @@
     "yeoman-test": "6.2.0"
   },
   "dependencies": {
-    "chalk": "^4.1.1",
     "glob": "^7.1.7",
     "lodash": "^4.17.21",
     "mem-fs": "^2.2.1",
