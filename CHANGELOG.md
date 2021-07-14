@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.0.94](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.94) (2021-07-14)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.93...v1.0.94)
+
+#### :bug: Bug Fix
+
+- [#309](https://github.com/tanem/generator-typescript-react-lib/pull/309) Fix build issues ([@tanem](https://github.com/tanem))
+
+#### :house: Internal
+
+- [#308](https://github.com/tanem/generator-typescript-react-lib/pull/308) Update renovate config ([@tanem](https://github.com/tanem))
+
 ## [v1.0.93](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.93) (2021-07-12)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.92...v1.0.93)
 
