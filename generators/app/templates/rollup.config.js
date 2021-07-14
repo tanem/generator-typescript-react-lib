@@ -127,11 +127,10 @@ const getPlugins = (bundleType) => [
   sizeSnapshot(),
   isProduction(bundleType) &&
     terser({
-      sourcemap: true,
       output: { comments: false },
       compress: {
-        keep_infinity: true, // eslint-disable-line @typescript-eslint/camelcase
-        pure_getters: true, // eslint-disable-line @typescript-eslint/camelcase
+        keep_infinity: true,
+        pure_getters: true,
       },
       warnings: true,
       ecma: 5,
@@ -143,6 +142,7 @@ const getCjsConfig = (bundleType) => ({
   input,
   external: getExternal(bundleType),
   output: {
+    exports: 'default',
     file: `dist/<%= packageName %>.cjs.${
       isProduction(bundleType) ? 'production' : 'development'
     }.js`,
