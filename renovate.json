@@ -6,6 +6,10 @@
     ":label(internal)",
     ":masterIssue"
   ],
+  "includePaths": [
+    "generators/app/templates/_package.json",
+    "package.json"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
