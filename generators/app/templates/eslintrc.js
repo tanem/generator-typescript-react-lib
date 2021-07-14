@@ -1,8 +1,10 @@
+const path = require('path')
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.eslint.json',
+    project: path.join(__dirname, 'tsconfig.eslint.json'),
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
@@ -17,7 +19,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
   ],
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
