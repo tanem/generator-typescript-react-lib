@@ -1,21 +1,9 @@
-import { mount, ReactWrapper } from 'enzyme'
-import * as React from 'react'
+import { render, screen } from '@testing-library/react'
+import React from 'react'
 import C from '../src'
 
-describe('Component', () => {
-  let container: HTMLDivElement
-  let wrapper: ReactWrapper
-
-  beforeEach(() => {
-    container = document.body.appendChild(document.createElement('div'))
-  })
-
-  afterEach(() => {
-    document.body.removeChild(container)
-  })
-
-  it('should render correctly', () => {
-    wrapper = mount(<C text="text" />, { attachTo: container })
-    expect(wrapper.html()).toMatchSnapshot()
-  })
+test('C', () => {
+  const text = 'text'
+  render(<C text={text} />)
+  expect(screen.getByText(text)).toBeVisible()
 })

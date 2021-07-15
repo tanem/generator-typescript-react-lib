@@ -304,6 +304,7 @@ Object {
   "dependencies": Object {
     "@babel/runtime": Any<String>,
     "prop-types": Any<String>,
+    "tslib": Any<String>,
   },
   "description": "Test package.",
   "devDependencies": Object {
@@ -312,25 +313,23 @@ Object {
     "@babel/plugin-transform-runtime": Any<String>,
     "@babel/preset-env": Any<String>,
     "@babel/preset-react": Any<String>,
-    "@types/enzyme": Any<String>,
-    "@types/enzyme-adapter-react-16": Any<String>,
+    "@testing-library/jest-dom": Any<String>,
+    "@testing-library/react": Any<String>,
+    "@testing-library/user-event": Any<String>,
     "@types/jest": Any<String>,
     "@types/prop-types": Any<String>,
     "@types/react": Any<String>,
     "@types/react-dom": Any<String>,
     "@typescript-eslint/eslint-plugin": Any<String>,
     "@typescript-eslint/parser": Any<String>,
-    "@wojtekmaj/enzyme-adapter-react-17": Any<String>,
     "babel-core": Any<String>,
     "babel-plugin-transform-react-remove-prop-types": Any<String>,
     "cross-env": Any<String>,
-    "enzyme": Any<String>,
     "eslint": Any<String>,
     "eslint-config-prettier": Any<String>,
     "eslint-plugin-react": Any<String>,
     "eslint-plugin-react-hooks": Any<String>,
     "jest": Any<String>,
-    "jest-prettyhtml-matchers": Any<String>,
     "npm-run-all": Any<String>,
     "prettier": Any<String>,
     "react": Any<String>,
@@ -656,7 +655,6 @@ exports[`creates scripts/jest/config.src.js 1`] = `
   preset: 'ts-jest',
   rootDir: process.cwd(),
   roots: ['<rootDir>/test'],
-  setupFiles: ['<rootDir>/scripts/jest/setupEnvironment.ts'],
   setupFilesAfterEnv: ['<rootDir>/scripts/jest/setupJest.ts'],
   testEnvironment: 'jsdom',
   testMatch: ['<rootDir>/test/*.spec.ts?(x)'],
@@ -689,36 +687,20 @@ module.exports = Object.assign({}, srcConfig, {
 "
 `;
 
-exports[`creates scripts/jest/setupEnvironment.ts 1`] = `
-"import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
-import { configure } from 'enzyme'
-
-configure({ adapter: new Adapter() })
-"
-`;
-
 exports[`creates scripts/jest/setupJest.ts 1`] = `
-"import { createPrettyHtmlMatchers } from 'jest-prettyhtml-matchers'
-
-expect.extend(
-  createPrettyHtmlMatchers({
-    singleQuote: true,
-    sortAttributes: true,
-    wrapAttributes: true,
-  })
-)
+"import '@testing-library/jest-dom'
 "
 `;
 
 exports[`creates src/index.tsx 1`] = `
-"import * as PropTypes from 'prop-types'
-import * as React from 'react'
+"import PropTypes from 'prop-types'
+import React from 'react'
 
 interface Props {
   text: string
 }
 
-const C: React.SFC<Props> = ({ text }) => <p>{text}</p>
+const C: React.FC<Props> = ({ text }) => <p>{text}</p>
 
 C.propTypes = {
   text: PropTypes.string.isRequired,
@@ -729,26 +711,14 @@ export default C
 `;
 
 exports[`creates test/index.spec.tsx 1`] = `
-"import { mount, ReactWrapper } from 'enzyme'
-import * as React from 'react'
+"import { render, screen } from '@testing-library/react'
+import React from 'react'
 import C from '../src'
 
-describe('Component', () => {
-  let container: HTMLDivElement
-  let wrapper: ReactWrapper
-
-  beforeEach(() => {
-    container = document.body.appendChild(document.createElement('div'))
-  })
-
-  afterEach(() => {
-    document.body.removeChild(container)
-  })
-
-  it('should render correctly', () => {
-    wrapper = mount(<C text=\\"text\\" />, { attachTo: container })
-    expect(wrapper.html()).toMatchSnapshot()
-  })
+test('C', () => {
+  const text = 'text'
+  render(<C text={text} />)
+  expect(screen.getByText(text)).toBeVisible()
 })
 "
 `;
