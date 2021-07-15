@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.95](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.95) (2021-07-15)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.94...v1.0.95)
+
+#### :house: Internal
+
+- [#310](https://github.com/tanem/generator-typescript-react-lib/pull/310) Use react testing library ([@tanem](https://github.com/tanem))
+
 ## [v1.0.94](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.94) (2021-07-14)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.93...v1.0.94)
 
