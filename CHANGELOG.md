@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.99](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.99) (2021-08-09)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.98...v1.0.99)
+
+#### :house: Internal
+
+- [#316](https://github.com/tanem/generator-typescript-react-lib/pull/316) Update dependency tanem-scripts to v6.0.27 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#315](https://github.com/tanem/generator-typescript-react-lib/pull/315) Update dependency mem-fs-editor to ^9.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.98](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.98) (2021-08-01)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.97...v1.0.98)
 
