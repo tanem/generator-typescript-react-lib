@@ -27,7 +27,7 @@
     "glob": "^7.1.7",
     "lodash": "^4.17.21",
     "mem-fs": "^2.2.1",
-    "mem-fs-editor": "^9.1.0",
+    "mem-fs-editor": "^9.3.0",
     "yeoman-environment": "^3.6.0",
     "yeoman-generator": "^5.4.2"
   },
