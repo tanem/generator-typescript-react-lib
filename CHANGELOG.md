@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.109](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.109) (2021-10-22)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.108...v1.0.109)
+
+#### :house: Internal
+
+- [#339](https://github.com/tanem/generator-typescript-react-lib/pull/339) Update dependency jest to v27.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#338](https://github.com/tanem/generator-typescript-react-lib/pull/338) Update dependency doctoc to v2.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.108](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.108) (2021-10-15)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.107...v1.0.108)
 
