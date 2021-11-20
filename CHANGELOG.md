@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.111](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.111) (2021-11-20)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.110...v1.0.111)
+
+#### :house: Internal
+
+- [#343](https://github.com/tanem/generator-typescript-react-lib/pull/343) Update dependency yeoman-environment to ^3.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.110](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.110) (2021-11-08)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.109...v1.0.110)
 
