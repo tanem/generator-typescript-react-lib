@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.120](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.120) (2022-03-25)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.119...v1.0.120)
+
+#### :house: Internal
+
+- [#372](https://github.com/tanem/generator-typescript-react-lib/pull/372) Update dependency tanem-scripts to v6.0.44 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.119](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.119) (2022-03-21)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.118...v1.0.119)
 
