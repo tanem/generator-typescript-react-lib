@@ -20,7 +20,7 @@
     "jest": "27.5.1",
     "npm-run-all": "4.1.5",
     "prettier": "2.6.2",
-    "tanem-scripts": "6.0.46",
+    "tanem-scripts": "6.0.47",
     "yeoman-test": "6.3.0"
   },
   "dependencies": {
