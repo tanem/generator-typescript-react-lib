@@ -16,4 +16,4 @@ jobs:
           node-version: '14'
       - run: npm ci
       - run: npm test
-      - run: bash <(curl -s https://codecov.io/bash)
+      - uses: codecov/codecov-action@v3
