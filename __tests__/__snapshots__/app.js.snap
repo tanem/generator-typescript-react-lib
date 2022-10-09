@@ -90,7 +90,7 @@ dist"
 `;
 
 exports[`creates .prettierrc.json 1`] = `
-Object {
+{
   "semi": false,
   "singleQuote": true,
 }
@@ -102,7 +102,7 @@ exports[`creates LICENSE 1`] = `
 Copyright (c) 2022 John Smith <john.smith@js.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -111,7 +111,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -232,20 +232,20 @@ You will also see any lint errors in the console.
 `;
 
 exports[`creates examples/basic-usage/package.json 1`] = `
-Object {
-  "dependencies": Object {
+{
+  "dependencies": {
     "react": Any<String>,
     "react-dom": Any<String>,
     "react-scripts": Any<String>,
     "test-package": "latest",
   },
   "description": "TestPkg Basic Usage Example",
-  "keywords": Array [
+  "keywords": [
     "test-package",
   ],
   "name": "basic-usage",
   "private": true,
-  "scripts": Object {
+  "scripts": {
     "start": "react-scripts start",
   },
   "version": "0.1.0",
@@ -254,24 +254,24 @@ Object {
 
 exports[`creates examples/basic-usage/public/index.html 1`] = `
 "<!DOCTYPE html>
-<html lang=\\"en\\">
+<html lang="en">
 
 <head>
-  <meta charset=\\"utf-8\\">
-  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1, shrink-to-fit=no\\">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>%REACT_APP_DESCRIPTION%</title>
 </head>
 
 <body>
-  <div id=\\"root\\"></div>
+  <div id="root"></div>
 </body>
 
 </html>"
 `;
 
 exports[`creates examples/basic-usage/public/svg.svg 1`] = `
-"<svg width=\\"40\\" height=\\"40\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\">
-  <rect x=\\"5\\" y=\\"5\\" width=\\"30\\" height=\\"30\\" stroke=\\"black\\" fill=\\"transparent\\" stroke-width=\\"5\\" />
+"<svg width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect x="5" y="5" width="30" height="30" stroke="black" fill="transparent" stroke-width="5" />
 </svg>"
 `;
 
@@ -296,18 +296,18 @@ if (process.env.NODE_ENV === 'production') {
 `;
 
 exports[`creates package.json 1`] = `
-Object {
+{
   "author": "John Smith <john.smith@js.com>",
-  "bugs": Object {
+  "bugs": {
     "url": "github:jsmith/test-package/issues",
   },
-  "dependencies": Object {
+  "dependencies": {
     "@babel/runtime": Any<String>,
     "prop-types": Any<String>,
     "tslib": Any<String>,
   },
   "description": "Test package.",
-  "devDependencies": Object {
+  "devDependencies": {
     "@babel/core": Any<String>,
     "@babel/plugin-proposal-class-properties": Any<String>,
     "@babel/plugin-transform-runtime": Any<String>,
@@ -350,12 +350,12 @@ Object {
     "ts-jest": Any<String>,
     "typescript": Any<String>,
   },
-  "files": Array [
+  "files": [
     "dist",
   ],
   "homepage": "github:jsmith/test-package",
   "jsnext:main": "dist/test-package.esm.js",
-  "keywords": Array [
+  "keywords": [
     "javascript",
     "react",
     "typescript",
@@ -364,25 +364,25 @@ Object {
   "main": "dist/index.js",
   "module": "dist/test-package.esm.js",
   "name": "test-package",
-  "peerDependencies": Object {
+  "peerDependencies": {
     "react": Any<String>,
     "react-dom": Any<String>,
   },
-  "repository": Object {
+  "repository": {
     "type": "git",
     "url": "github:jsmith/test-package",
   },
-  "scripts": Object {
+  "scripts": {
     "build": "run-s clean compile bundle",
     "bundle": "rollup -c",
-    "check:format": "prettier --list-different \\"**/*.{js,ts,tsx}\\"",
+    "check:format": "prettier --list-different "**/*.{js,ts,tsx}"",
     "check:types": "tsc --noEmit",
     "clean": "run-p clean:*",
     "clean:compiled": "shx rm -rf compiled",
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
     "compile": "tsc -p tsconfig.base.json",
-    "format": "prettier --write \\"**/*.{js,ts,tsx}\\"",
+    "format": "prettier --write "**/*.{js,ts,tsx}"",
     "lint": "eslint . --ext .js,.ts",
     "postbundle": "npm run clean:compiled && shx cp ./index.js ./dist/index.js",
     "release": "tanem-scripts release",
@@ -400,29 +400,29 @@ Object {
 `;
 
 exports[`creates renovate.json 1`] = `
-Object {
-  "extends": Array [
+{
+  "extends": [
     "config:js-lib",
     ":rebaseStalePrs",
     ":automergeMinor",
     ":label(internal)",
     ":masterIssue",
   ],
-  "ignorePaths": Array [
+  "ignorePaths": [
     "**/node_modules/**",
   ],
-  "lockFileMaintenance": Object {
+  "lockFileMaintenance": {
     "enabled": true,
   },
-  "packageRules": Array [
-    Object {
-      "sourceUrlPrefixes": Array [
+  "packageRules": [
+    {
+      "sourceUrlPrefixes": [
         "https://github.com/tanem/",
       ],
       "stabilityDays": 0,
     },
-    Object {
-      "depTypeList": Array [
+    {
+      "depTypeList": [
         "dependencies",
       ],
       "rangeStrategy": "bump",
@@ -658,7 +658,7 @@ exports[`creates scripts/jest/config.src.js 1`] = `
   setupFilesAfterEnv: ['<rootDir>/scripts/jest/setupJest.ts'],
   testEnvironment: 'jsdom',
   testMatch: ['<rootDir>/test/*.spec.ts?(x)'],
-  transform: { '^.+\\\\\\\\.(js|tsx?)$': 'ts-jest' },
+  transform: { '^.+\\\\.(js|tsx?)$': 'ts-jest' },
 }
 "
 `;
@@ -724,8 +724,8 @@ test('C', () => {
 `;
 
 exports[`creates tsconfig.base.json 1`] = `
-Object {
-  "compilerOptions": Object {
+{
+  "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "dist",
@@ -745,29 +745,29 @@ Object {
     "strict": true,
     "target": "es5",
   },
-  "exclude": Array [
+  "exclude": [
     "node_modules",
     "dist",
   ],
-  "include": Array [
+  "include": [
     "src",
   ],
 }
 `;
 
 exports[`creates tsconfig.eslint.json 1`] = `
-Object {
-  "compilerOptions": Object {
+{
+  "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
   },
   "extends": "./tsconfig.json",
-  "files": Array [
+  "files": [
     ".eslintrc.js",
     "index.js",
     "rollup.config.js",
   ],
-  "include": Array [
+  "include": [
     "examples",
     "scripts",
     "src",
@@ -777,18 +777,18 @@ Object {
 `;
 
 exports[`creates tsconfig.json 1`] = `
-Object {
-  "compilerOptions": Object {
+{
+  "compilerOptions": {
     "allowJs": true,
     "declaration": false,
     "declarationDir": null,
     "module": "commonjs",
   },
-  "exclude": Array [
+  "exclude": [
     "node_modules",
   ],
   "extends": "./tsconfig.base.json",
-  "include": Array [
+  "include": [
     "scripts",
     "src",
     "test",
