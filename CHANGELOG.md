@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.0.136](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.136) (2022-10-09)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.135...v1.0.136)
+
+#### :house: Internal
+
+- [#402](https://github.com/tanem/generator-typescript-react-lib/pull/402) Update dependency jest to v29 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#409](https://github.com/tanem/generator-typescript-react-lib/pull/409) Update dependency yeoman-environment to ^3.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#408](https://github.com/tanem/generator-typescript-react-lib/pull/408) Update dependency yeoman-environment to ^3.11.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#407](https://github.com/tanem/generator-typescript-react-lib/pull/407) Update dependency doctoc to v2.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#406](https://github.com/tanem/generator-typescript-react-lib/pull/406) Use codecov action ([@tanem](https://github.com/tanem))
+- [#405](https://github.com/tanem/generator-typescript-react-lib/pull/405) Update dependency tanem-scripts to v6.0.60 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.135](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.135) (2022-09-18)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.134...v1.0.135)
 
