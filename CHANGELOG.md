@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.140](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.140) (2022-11-27)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.139...v1.0.140)
+
+#### :house: Internal
+
+- [#419](https://github.com/tanem/generator-typescript-react-lib/pull/419) Update dependency prettier to v2.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#418](https://github.com/tanem/generator-typescript-react-lib/pull/418) Update dependency tanem-scripts to v6.0.64 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.139](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.139) (2022-11-19)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.138...v1.0.139)
 
