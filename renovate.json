@@ -14,6 +14,12 @@
     {
       "depTypeList": ["dependencies"],
       "rangeStrategy": "bump"
+    },
+    {
+      "matchPackageNames": [
+        "yeoman-test"
+      ],
+      "allowedVersions": "< 7.0.0"
     }
   ],
   "prCreation": "not-pending",
