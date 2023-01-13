@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.143](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.143) (2023-01-13)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.142...v1.0.143)
+
+#### :house: Internal
+
+- [#428](https://github.com/tanem/generator-typescript-react-lib/pull/428) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#429](https://github.com/tanem/generator-typescript-react-lib/pull/429) Update year in license ([@tanem](https://github.com/tanem))
+- [#427](https://github.com/tanem/generator-typescript-react-lib/pull/427) Update dependency tanem-scripts to v6.0.68 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.142](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.142) (2022-12-23)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.141...v1.0.142)
 
