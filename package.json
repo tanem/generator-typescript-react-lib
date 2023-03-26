@@ -42,5 +42,8 @@
     "test": "jest __tests__"
   },
   "repository": "github:tanem/generator-typescript-react-lib",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "universal-user-agent": "6.0.0"
+  }
 }
