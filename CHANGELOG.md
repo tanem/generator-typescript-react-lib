@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.0.151](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.151) (2023-03-27)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.150...v1.0.151)
+
+#### :house: Internal
+
+- [#457](https://github.com/tanem/generator-typescript-react-lib/pull/457) Update tanem-scripts ([@tanem](https://github.com/tanem))
+- [#456](https://github.com/tanem/generator-typescript-react-lib/pull/456) Add universal-user-agent override ([@tanem](https://github.com/tanem))
+- [#452](https://github.com/tanem/generator-typescript-react-lib/pull/452) Update dependency glob to v9 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#455](https://github.com/tanem/generator-typescript-react-lib/pull/455) Update dependency tanem-scripts to v6.0.76 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.150](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.150) (2023-03-10)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.149...v1.0.150)
 
