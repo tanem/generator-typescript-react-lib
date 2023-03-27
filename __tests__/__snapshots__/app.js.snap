@@ -364,9 +364,6 @@ exports[`creates package.json 1`] = `
   "main": "dist/index.js",
   "module": "dist/test-package.esm.js",
   "name": "test-package",
-  "overrides": {
-    "universal-user-agent": "6.0.0",
-  },
   "peerDependencies": {
     "react": Any<String>,
     "react-dom": Any<String>,
