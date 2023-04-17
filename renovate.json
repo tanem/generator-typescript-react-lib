@@ -4,7 +4,6 @@
     ":rebaseStalePrs",
     ":automergeAll",
     ":label(internal)",
-    ":masterIssue",
     ":enableVulnerabilityAlerts"
   ],
   "lockFileMaintenance": {
@@ -12,7 +11,9 @@
   },
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
+      "depTypeList": [
+        "dependencies"
+      ],
       "rangeStrategy": "bump"
     },
     {
@@ -22,6 +23,5 @@
       "allowedVersions": "< 7.0.0"
     }
   ],
-  "prCreation": "not-pending",
   "stabilityDays": 3
 }
