@@ -1,5 +1,22 @@
 # Changelog
 
+## [v1.0.153](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.153) (2023-04-24)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.152...v1.0.153)
+
+#### :house: Internal
+
+- [#470](https://github.com/tanem/generator-typescript-react-lib/pull/470) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#469](https://github.com/tanem/generator-typescript-react-lib/pull/469) Restrict mem-fs version ([@tanem](https://github.com/tanem))
+- [#468](https://github.com/tanem/generator-typescript-react-lib/pull/468) Update dependency mem-fs-editor to ^10.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#467](https://github.com/tanem/generator-typescript-react-lib/pull/467) Update dependency mem-fs-editor to v10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#466](https://github.com/tanem/generator-typescript-react-lib/pull/466) Update dependency glob to ^10.2.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#464](https://github.com/tanem/generator-typescript-react-lib/pull/464) Update dependency glob to ^10.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#462](https://github.com/tanem/generator-typescript-react-lib/pull/462) Update dependency tanem-scripts to v7.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#463](https://github.com/tanem/generator-typescript-react-lib/pull/463) Update dependency glob to v10 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#460](https://github.com/tanem/generator-typescript-react-lib/pull/460) Update dependency glob to ^9.3.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#461](https://github.com/tanem/generator-typescript-react-lib/pull/461) Update dependency prettier to v2.8.7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#459](https://github.com/tanem/generator-typescript-react-lib/pull/459) Reconfigure renovate ([@tanem](https://github.com/tanem))
+
 ## [v1.0.152](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.152) (2023-04-17)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.151...v1.0.152)
 
