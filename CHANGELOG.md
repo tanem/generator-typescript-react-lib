@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.0.157](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.157) (2023-05-20)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.156...v1.0.157)
+
+#### :house: Internal
+
+- [#486](https://github.com/tanem/generator-typescript-react-lib/pull/486) Update dependency yeoman-environment to ^3.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#485](https://github.com/tanem/generator-typescript-react-lib/pull/485) Update dependency glob to ^10.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#484](https://github.com/tanem/generator-typescript-react-lib/pull/484) Update dependency tanem-scripts to v7.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#483](https://github.com/tanem/generator-typescript-react-lib/pull/483) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#482](https://github.com/tanem/generator-typescript-react-lib/pull/482) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#481](https://github.com/tanem/generator-typescript-react-lib/pull/481) Update dependency glob to ^10.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.156](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.156) (2023-05-12)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.155...v1.0.156)
 
