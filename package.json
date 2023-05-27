@@ -28,7 +28,7 @@
     "lodash": "^4.17.21",
     "mem-fs": "^2.3.0",
     "mem-fs-editor": "^10.0.2",
-    "yeoman-environment": "^3.18.3",
+    "yeoman-environment": "^3.18.4",
     "yeoman-generator": "^5.9.0"
   },
   "jest": {
