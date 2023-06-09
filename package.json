@@ -24,7 +24,7 @@
     "yeoman-test": "6.3.0"
   },
   "dependencies": {
-    "glob": "^10.2.6",
+    "glob": "^10.2.7",
     "lodash": "^4.17.21",
     "mem-fs": "^2.3.0",
     "mem-fs-editor": "^10.0.2",
