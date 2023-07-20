@@ -1,5 +1,20 @@
 # Changelog
 
+## [v1.0.163](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.163) (2023-07-20)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.162...v1.0.163)
+
+#### :house: Internal
+
+- [#515](https://github.com/tanem/generator-typescript-react-lib/pull/515) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#514](https://github.com/tanem/generator-typescript-react-lib/pull/514) Update dependency glob to ^10.3.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#513](https://github.com/tanem/generator-typescript-react-lib/pull/513) Update dependency glob to ^10.3.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#512](https://github.com/tanem/generator-typescript-react-lib/pull/512) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#511](https://github.com/tanem/generator-typescript-react-lib/pull/511) Update dependency jest to v29.6.1 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#509](https://github.com/tanem/generator-typescript-react-lib/pull/509) Update dependency jest to v29.6.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#508](https://github.com/tanem/generator-typescript-react-lib/pull/508) Update dependency tanem-scripts to v7.0.11 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#507](https://github.com/tanem/generator-typescript-react-lib/pull/507) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#506](https://github.com/tanem/generator-typescript-react-lib/pull/506) Update dependency glob to ^10.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.162](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.162) (2023-06-30)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.161...v1.0.162)
 
