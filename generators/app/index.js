@@ -67,9 +67,9 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
           this.templatePath(template),
           this.destinationPath(
-            templateMap.has(template) ? templateMap.get(template) : template
+            templateMap.has(template) ? templateMap.get(template) : template,
           ),
-          this.props
+          this.props,
         )
       })
   }
@@ -93,7 +93,7 @@ module.exports = class extends Generator {
       ],
       {
         cwd: this.destinationPath(),
-      }
+      },
     )
   }
 }
