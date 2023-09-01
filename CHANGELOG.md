@@ -1,5 +1,18 @@
 # Changelog
 
+## [v1.0.167](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.167) (2023-09-01)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.166...v1.0.167)
+
+#### :house: Internal
+
+- [#531](https://github.com/tanem/generator-typescript-react-lib/pull/531) Update dependency prettier to v3.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#530](https://github.com/tanem/generator-typescript-react-lib/pull/530) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#529](https://github.com/tanem/generator-typescript-react-lib/pull/529) Update dependency jest to v29.6.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#528](https://github.com/tanem/generator-typescript-react-lib/pull/528) Update dependency jest to v29.6.3 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#527](https://github.com/tanem/generator-typescript-react-lib/pull/527) Update dependency tanem-scripts to v7.0.15 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#526](https://github.com/tanem/generator-typescript-react-lib/pull/526) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#525](https://github.com/tanem/generator-typescript-react-lib/pull/525) Update dependency prettier to v3.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.166](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.166) (2023-08-18)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.165...v1.0.166)
 
