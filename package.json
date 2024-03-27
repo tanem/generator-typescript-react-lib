@@ -29,7 +29,7 @@
     "mem-fs": "^2.3.0",
     "mem-fs-editor": "^10.0.3",
     "yeoman-environment": "^3.19.3",
-    "yeoman-generator": "^7.1.1"
+    "yeoman-generator": "^5.10.0"
   },
   "jest": {
     "testEnvironment": "node",

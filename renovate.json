@@ -33,6 +33,12 @@
         "mem-fs-editor"
       ],
       "allowedVersions": "< 11.0.0"
+    },
+    {
+      "matchPackageNames": [
+        "yeoman-generator"
+      ],
+      "allowedVersions": "< 6.0.0"
     }
   ],
   "stabilityDays": 3
