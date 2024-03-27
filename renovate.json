@@ -39,6 +39,12 @@
         "yeoman-generator"
       ],
       "allowedVersions": "< 6.0.0"
+    },
+    {
+      "matchPackageNames": [
+        "yeoman-environment"
+      ],
+      "allowedVersions": "< 4.0.0"
     }
   ],
   "stabilityDays": 3
