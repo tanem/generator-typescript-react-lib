@@ -68,7 +68,7 @@ jobs:
           node-version: '14'
       - run: npm ci
       - run: npm test
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
 "
 `;
 
