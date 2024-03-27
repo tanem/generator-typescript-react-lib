@@ -27,6 +27,12 @@
         "mem-fs"
       ],
       "allowedVersions": "< 3.0.0"
+    },
+    {
+      "matchPackageNames": [
+        "mem-fs-editor"
+      ],
+      "allowedVersions": "< 11.0.0"
     }
   ],
   "stabilityDays": 3
