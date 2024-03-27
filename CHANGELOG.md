@@ -1,5 +1,36 @@
 # Changelog
 
+## [v1.0.177](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.177) (2024-03-27)
+[Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.176...v1.0.177)
+
+#### :house: Internal
+
+- [#559](https://github.com/tanem/generator-typescript-react-lib/pull/559) Update dependency yeoman-environment to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#561](https://github.com/tanem/generator-typescript-react-lib/pull/561) Update dependency yeoman-generator to v7 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#568](https://github.com/tanem/generator-typescript-react-lib/pull/568) Update actions/checkout action to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#569](https://github.com/tanem/generator-typescript-react-lib/pull/569) Update actions/setup-node action to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#586](https://github.com/tanem/generator-typescript-react-lib/pull/586) Update codecov/codecov-action action to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#556](https://github.com/tanem/generator-typescript-react-lib/pull/556) Update dependency mem-fs-editor to v11 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#597](https://github.com/tanem/generator-typescript-react-lib/pull/597) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#596](https://github.com/tanem/generator-typescript-react-lib/pull/596) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#595](https://github.com/tanem/generator-typescript-react-lib/pull/595) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#594](https://github.com/tanem/generator-typescript-react-lib/pull/594) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#593](https://github.com/tanem/generator-typescript-react-lib/pull/593) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#592](https://github.com/tanem/generator-typescript-react-lib/pull/592) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#591](https://github.com/tanem/generator-typescript-react-lib/pull/591) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#589](https://github.com/tanem/generator-typescript-react-lib/pull/589) Update dependency prettier to v3.2.5 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#588](https://github.com/tanem/generator-typescript-react-lib/pull/588) Update dependency tanem-scripts to v7.0.26 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#587](https://github.com/tanem/generator-typescript-react-lib/pull/587) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#585](https://github.com/tanem/generator-typescript-react-lib/pull/585) Update dependency npm-run-all2 to v6.1.2 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#580](https://github.com/tanem/generator-typescript-react-lib/pull/580) Update dependency prettier to v3.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#584](https://github.com/tanem/generator-typescript-react-lib/pull/584) Update dependency npm-run-all2 to v6 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#579](https://github.com/tanem/generator-typescript-react-lib/pull/579) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#581](https://github.com/tanem/generator-typescript-react-lib/pull/581) Replace dependency npm-run-all with npm-run-all2 5.0.0 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#582](https://github.com/tanem/generator-typescript-react-lib/pull/582) Update test snapshot ([@tanem](https://github.com/tanem))
+- [#578](https://github.com/tanem/generator-typescript-react-lib/pull/578) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+- [#577](https://github.com/tanem/generator-typescript-react-lib/pull/577) Update dependency tanem-scripts to v7.0.25 ([@renovate[bot]](https://github.com/apps/renovate))
+- [#576](https://github.com/tanem/generator-typescript-react-lib/pull/576) Lock file maintenance ([@renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.176](https://github.com/tanem/generator-typescript-react-lib/tree/v1.0.176) (2023-12-15)
 [Full Changelog](https://github.com/tanem/generator-typescript-react-lib/compare/v1.0.175...v1.0.176)
 
