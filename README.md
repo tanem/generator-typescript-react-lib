@@ -112,7 +112,7 @@ The `release` script will:
 
 MIT
 
-[build-image]: https://img.shields.io/github/workflow/status/tanem/generator-typescript-react-lib/CI?style=flat-square
+[build-image]: https://img.shields.io/github/actions/workflow/status/tanem/generator-typescript-react-lib/ci.yml?branch=master&style=flat-square
 [build-url]: https://github.com/tanem/generator-typescript-react-lib/actions?query=workflow%3ACI
 [codecov-image]: https://img.shields.io/codecov/c/github/tanem/generator-typescript-react-lib.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/tanem/generator-typescript-react-lib
