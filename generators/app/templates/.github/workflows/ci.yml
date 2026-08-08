@@ -1,10 +1,12 @@
 name: CI
 
+# `on:` does not evaluate expressions, so a branch filter has to name a branch
+# rather than read the repository's default. GitHub creates new repos on main.
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   ci:
