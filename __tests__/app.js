@@ -20,6 +20,13 @@ const readFile = (file) => {
   return path.extname(file) === '.json' ? JSON.parse(data) : data
 }
 
+// The LICENSE template stamps the current year, so a snapshot holding it
+// verbatim goes stale on 1 January and stays stale until someone notices.
+const normaliseYear = (data) =>
+  typeof data === 'string'
+    ? data.replace(/Copyright \(c\) \d{4}/, 'Copyright (c) <year>')
+    : data
+
 const emailMock = jest.fn().mockResolvedValue('mock.user@mock.com')
 const nameMock = jest.fn().mockResolvedValue('Mock Name')
 const githubUsernameMock = jest.fn().mockResolvedValue('mockgithubusername')
@@ -67,6 +74,6 @@ test.each(getFiles())('creates %s', (file) => {
         : {}),
     })
   } else {
-    expect(readFile(file)).toMatchSnapshot()
+    expect(normaliseYear(readFile(file))).toMatchSnapshot()
   }
 })
