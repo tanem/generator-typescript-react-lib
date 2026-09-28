@@ -1,5 +1,7 @@
 # generator-typescript-react-lib
 
+> **Unmaintained.** This project is no longer maintained and the repository is archived. The npm package is deprecated.
+
 [![npm version][npmv-image]][npmv-url]
 [![build status][build-image]][build-url]
 [![coverage status][codecov-image]][codecov-url]
